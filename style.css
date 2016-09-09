@@ -1,10 +1,14 @@
+* {
+
+	margin: 0;
+	padding: 0;
+}
+
 body {
 
-	background: #F6FAFF;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	background: #D1E7FF;
 	padding-right: 0;
-	padding-left: 5%;
+	margin-right: 0;
 }
 
 h1 {
@@ -50,7 +54,9 @@ a.hlink:hover, a.hlink:active {
 
 .header {
 
-	background: linear-gradient(to bottom right, #0080ff, white 75%);
+	/*position: absolute;*/
+	background: url(res/header.png) no-repeat center center;
+	background-size: cover;
 	float: left;
 	clear: left;
 	width: 100%;
@@ -58,6 +64,7 @@ a.hlink:hover, a.hlink:active {
 	padding-left: 30px;
 	padding-right: 10px;
 	padding-top: 0;
+	margin-right: 0;
 	/*margin-bottom: 20px;*/
 	/*z-index: -2;*/
 }
@@ -122,18 +129,41 @@ img.disegno {
 
 .content {
 
-	width: 100%;
+	/*position: fixed;*/
+	/*margin-right: 0;
+	padding-right: 0;
+	outline: 0;
+	right: 0;*/
+  	width: 102%;
+	float: left;
+	/*background-size: cover;*/
 	/*background: linear-gradient(to right top, #0080ff, white 75%);*/
-	padding-left: 2%;
+	/*border: 1px solid black;*/
+	padding-left: 10px;
 }
 
 .core {
 
 	margin-left: 3%;
-	padding: 5%;
+	padding: 2%;
 	float: left;
-	width: 68%;
+	width: 51%;
+	margin-right: 0;
+	padding-right: 0;
+	padding-left: 0;
+	/*border: 1px solid black;*/
 	/*background-color: rgba(20, 20, 20, 0.3);*/
+}
+
+.lato {
+
+	width: 25%;
+	height: auto;
+	float: right;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid black;*/
 }
 
 .inwindow {
@@ -141,6 +171,7 @@ img.disegno {
 	float: left;
 	/*border: 4px solid #0066cc;*/
 	border: 2px solid black;
+	margin-right: 0;
 	width: 100%;
 	padding: 0;
 }
@@ -158,6 +189,7 @@ img.disegno {
 	margin: auto;
 	margin-top: 0;
 	margin-bottom: 3%;
+	margin-right: 0;
 	font-family: serif;
 	font-style: oblique;
 	font-weight: bold;
@@ -171,6 +203,7 @@ img.disegno {
 	width: 90%;
 	border: 2px solid black;
 	margin: 2%;
+	margin-right: 0;
 	padding-left: 5%;
 }
 
