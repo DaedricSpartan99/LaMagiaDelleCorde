@@ -6,7 +6,7 @@
 
 body {
 
-	background: #D1E7FF;
+	background: #CCCCCC;
 	padding-right: 0;
 	margin-right: 0;
 }
@@ -27,7 +27,7 @@ h2 {
 
 p {
 
-	color: darkblue;
+	color: black;
 	font-size: 12pt;
 	font-family: Arial;
 }
@@ -69,6 +69,27 @@ a.hlink:hover, a.hlink:active {
 	/*z-index: -2;*/
 }
 
+._header {
+
+	/*position: absolute;*/
+	background: url(res/header.png) no-repeat center center;
+	background-size: cover;
+	float: left;
+	clear: left;
+	width: 100%;
+	height: auto;
+	padding-right: 3%;
+	padding-top: 10%;
+	/*margin-bottom: 20px;*/
+	/*z-index: -2;*/
+}
+
+img._logo {
+
+	float: right;
+	width: 55%;
+	height: auto;
+}
 
 img.logo {
 
@@ -110,13 +131,14 @@ img.disegno {
 
 #menu {
 
-	margin-top: 10px;
-	min-height: 10%;
+	/*margin-top: 10px;*/
+	min-height: 8%;
 	width: 100%;
 	list-style: none;
+	padding-left: 
     float: left;
-    clear: left;
-    outline-bottom: 10px solid grey;
+    clear: both;
+    /*border-bottom: 10px solid grey;*/
 }
 
 #menu li {
@@ -179,6 +201,25 @@ img.disegno {
 
 #intitle {
 
+	text-align: center;
+	float: left;
+	clear: both;
+	font-size: 40px;
+	color: orange;
+	font-family: serif;
+	font-weight: bold;
+	margin: 0;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 0;
+	margin-bottom: 50px;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#inh2 {
+
 	background-color: #0066cc;
 	float: left;
 	clear: both;
@@ -202,7 +243,7 @@ img.disegno {
 	float: left;
 	clear: left;
 	width: 90%;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	margin: 2%;
 	margin-right: 0;
 	padding-left: 5%;
@@ -210,7 +251,7 @@ img.disegno {
 
 #in_p {
 
-	color: darkblue;
+	color: rgb(0, 57, 84);
 }
 
 #vlist {
