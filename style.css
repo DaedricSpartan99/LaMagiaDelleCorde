@@ -34,6 +34,7 @@ p {
 
 a.hlink:link, a.hlink:visited {
 
+	position: static;
 	color: #606060;
 	font-size: 16pt;
 	font-style: bold;
@@ -47,6 +48,7 @@ a.hlink:link, a.hlink:visited {
 
 a.hlink:hover, a.hlink:active {
 
+	position: static;
 	color: #331900;
 	background-color: #99ccff;
 	border-bottom: 3px solid black;
@@ -54,99 +56,29 @@ a.hlink:hover, a.hlink:active {
 
 .header {
 
-	/*position: absolute;*/
 	background: url(res/header.png) no-repeat center center;
-	background-size: cover;
+	background-size: 100% 100%;
 	float: left;
-	clear: left;
+	clear: both;
 	width: 100%;
-	height: 40%;
-	padding-left: 30px;
-	padding-right: 10px;
-	padding-top: 0;
-	margin-right: 0;
-	/*margin-bottom: 20px;*/
-	/*z-index: -2;*/
-}
-
-._header {
-
-	/*position: absolute;*/
-	background: url(res/header.png) no-repeat center center;
-	background-size: cover;
-	float: left;
-	clear: left;
-	width: 100%;
-	height: auto;
-	padding-right: 3%;
-	padding-top: 10%;
-	/*margin-bottom: 20px;*/
-	/*z-index: -2;*/
-}
-
-img._logo {
-
-	float: right;
-	width: 55%;
-	height: auto;
 }
 
 img.logo {
 
-	position: static;
-	float: left;
-	width: 100%;
-	height: auto;
-}
-
-.deco {
-
-	position: relative;
-	margin-top: 30px;
-	float: left;
-	width: 40%;
-	height: auto;
-}
-
-img.disegno {
-
 	float: right;
-	width: 60%;
+	width: 25%;
 	height: auto;
-	z-index: -1;
+	margin-top: 20px;
+	margin-right: 10%;
+	margin-left: 0;
+	margin-bottom: 50px;
 }
 
-#visita {
+.menu {
 
-	position: absolute;
-	text-align: left;
-	color: black;
-	float: left;
-	font-size: 12;
-	padding-left: 20%;
-	padding-bottom: 0;
-	padding-top: 80%;
-	padding-right: 0;
-}
-
-#menu {
-
-	/*margin-top: 10px;*/
 	min-height: 8%;
-	width: 100%;
-	list-style: none;
-	padding-left: 
+	width: 50%;
     float: left;
-    clear: both;
-    /*border-bottom: 10px solid grey;*/
-}
-
-#menu li {
-
-	display: inline;
-	padding-top: 0;
-	min-width: 18%;
-	float: left;
 }
 
 .content {
@@ -156,7 +88,7 @@ img.disegno {
 	padding-right: 0;
 	outline: 0;
 	right: 0;*/
-  	width: 102%;
+  	width: 100%;
 	float: left;
 	/*background-size: cover;*/
 	/*background: linear-gradient(to right top, #0080ff, white 75%);*/
