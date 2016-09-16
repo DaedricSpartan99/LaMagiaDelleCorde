@@ -6,7 +6,8 @@
 
 body {
 
-	background: #CCCCCC;
+	background-image: url("res/sfondo.jpg");
+	background-size: cover;
 	padding-right: 0;
 	margin-right: 0;
 }
@@ -83,108 +84,39 @@ img.logo {
 
 .content {
 
-	position: relative;
-	/*margin-right: 0;
-	padding-right: 0;
-	outline: 0;
-	right: 0;*/
-  	width: 100%;
+	background-color: rgba(150, 150, 150, 0.7);
+	margin-left: 12%;
+  	width: 70%;
 	float: left;
-	/*background-size: cover;*/
-	/*background: linear-gradient(to right top, #0080ff, white 75%);*/
-	/*border: 1px solid black;*/
-	padding-left: 10px;
+	clear: both;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
-.core {
+#titolo {
 
-	margin-left: 3%;
-	padding: 2%;
-	float: left;
-	width: 51%;
-	margin-right: 0;
-	padding-right: 0;
-	padding-left: 0;
-	/*border: 1px solid black;*/
-	/*background-color: rgba(20, 20, 20, 0.3);*/
-}
-
-.lato {
-
-	position: absolute;
-	width: 25%;
-	height: auto;
-	float: right;
-	right: 0;
-	margin: 0;
-	padding: 0;
-	/*border: 1px solid black;*/
-}
-
-.inwindow {
-
-	float: left;
-	/*border: 4px solid #0066cc;*/
-	border: 2px solid black;
-	margin-right: 0;
-	width: 100%;
-	padding: 0;
-}
-
-#intitle {
-
-	position: static;
-	text-align: center;
+	text-align: left;
 	float: left;
 	clear: both;
 	font-size: 40px;
-	color: orange;
+	color: #0A004E;
 	font-family: serif;
 	font-weight: bold;
-	margin: 0;
-	width: 100%;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	padding-left: 0;
-	margin-bottom: 50px;
-	display: inline-block;
-	background-color: rgba(255, 255, 255, 0.5);
-}
-
-#inh2 {
-
-	background-color: #0066cc;
-	float: left;
-	clear: both;
-	font-size: 20px;
-	display: inline;
-	padding: 2%;
-	padding-left: 10%;
-	width: 88%;
 	margin: auto;
-	margin-top: 0;
-	margin-bottom: 3%;
-	margin-right: 0;
-	font-family: serif;
-	font-style: oblique;
-	font-weight: bold;
-	color: white;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 50px;
+	/*display: inline-block;*/
 }
 
-.in_content {
-
-	float: left;
-	clear: left;
-	width: 90%;
-	/*border: 2px solid black;*/
-	margin: 2%;
-	margin-right: 0;
-	padding-left: 5%;
-}
-
-#in_p {
+#text {
 
 	color: rgb(0, 57, 84);
+	float: left;
 }
 
 #vlist {
