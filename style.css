@@ -6,8 +6,6 @@
 
 body {
 
-	background-image: url("res/sfondo.jpg");
-	background-size: cover;
 	padding-right: 0;
 	margin-right: 0;
 }
@@ -26,42 +24,57 @@ h2 {
 	font-family: "Times new roman";
 }
 
-p {
+@font-face {
 
-	color: black;
-	font-size: 12pt;
-	font-family: Arial;
+	font-family: 'Bradley Hand ITC';
+  	src: url('res/BRADHI.ttf');
 }
 
-a.hlink:link, a.hlink:visited {
+p {
 
-	position: static;
+	color: darkblue;
+	float: left;
+	font-size: 14pt;
+	font-family: 'Bradley Hand ITC';
+	font-style: serif;
+}
+
+#link1:link, #link1:visited,
+#link2:link, #link2:visited,
+#link3:link, #link3:visited,
+#link4:link, #link4:visited {
+
+	position: absolute;
 	color: #606060;
+	font-family: 'Bradley Hand ITC';
 	font-size: 16pt;
-	font-style: bold;
+	font-weight: bold;
+	font-style: oblique;
 	background-color: none;
 	text-decoration: none;
 	text-align: center;
 	padding: 14px 15px;
 	display: block;
-	border-bottom: 3px solid black;
 }
 
-a.hlink:hover, a.hlink:active {
+#link1:hover, #link1:active,
+#link2:hover, #link2:active,
+#link3:hover, #link3:active,
+#link4:hover, #link4:active {
 
-	position: static;
+	position: absolute;
 	color: #331900;
 	background-color: #99ccff;
-	border-bottom: 3px solid black;
 }
 
-.header {
+#header {
 
 	background: url(res/header.png) no-repeat center center;
 	background-size: 100% 100%;
 	float: left;
 	clear: both;
 	width: 100%;
+	height: 50%;
 }
 
 img.logo {
@@ -77,9 +90,23 @@ img.logo {
 
 .menu {
 
+	position: relative;
 	min-height: 8%;
 	width: 50%;
     float: left;
+}
+
+.container {
+
+	width: 100%;
+	min-height: 500px;
+	height: auto;
+	float: left;
+	clear: both;
+	background: url(res/sfondo.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	overflow: hidden;
+	display: flex;
 }
 
 .content {
@@ -95,6 +122,8 @@ img.logo {
 	padding-right: 5%;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	align-items: stretch;
+
 }
 
 #titolo {
@@ -103,20 +132,14 @@ img.logo {
 	float: left;
 	clear: both;
 	font-size: 40px;
-	color: #0A004E;
-	font-family: serif;
+	color: white;
+	font-family: 'Bradley Hand ITC';
 	font-weight: bold;
 	margin: auto;
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 50px;
 	/*display: inline-block;*/
-}
-
-#text {
-
-	color: rgb(0, 57, 84);
-	float: left;
 }
 
 #vlist {
