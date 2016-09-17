@@ -13,12 +13,27 @@ function locate(elem, leftperc, topperc, parent_height) {
 	div.style.top = parent_height * topperc / 100 + 'px';
 }
 
+function adjustLinkFont(elem, parent) {
+
+	var link = document.getElementById(elem);
+	var width = document.getElementById(parent).clientWidth;
+	link.style.fontSize = 18 * width / 1291 + 'pt';
+}
+
 (function () {
 
     var height = adjustHeight('header', 35);
+
     locate('link1', 25, 20, height);
     locate('link2', 53, 35, height);
     locate('link3', 35, 48, height);
-    locate('link4', 68, 62, height);
+    locate('link4', 68, 63, height);
+    locate('link5', 43, 71, height);
+
+    var i;
+    for (i = 1; i <= 5; i++) {
+
+    	adjustLinkFont('link' + i, 'header');
+    }
 
 })(); 

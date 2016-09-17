@@ -42,12 +42,13 @@ p {
 #link1:link, #link1:visited,
 #link2:link, #link2:visited,
 #link3:link, #link3:visited,
-#link4:link, #link4:visited {
+#link4:link, #link4:visited,
+#link5:link, #link5:visited {
 
 	position: absolute;
 	color: #606060;
 	font-family: 'Bradley Hand ITC';
-	font-size: 16pt;
+	font-size: 18pt;
 	font-weight: bold;
 	font-style: oblique;
 	background-color: none;
@@ -60,7 +61,8 @@ p {
 #link1:hover, #link1:active,
 #link2:hover, #link2:active,
 #link3:hover, #link3:active,
-#link4:hover, #link4:active {
+#link4:hover, #link4:active,
+#link5:hover, #link5:active {
 
 	position: absolute;
 	color: #331900;
