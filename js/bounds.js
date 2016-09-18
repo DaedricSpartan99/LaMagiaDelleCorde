@@ -20,9 +20,9 @@ function adjustLinkFont(elem, parent) {
 	link.style.fontSize = 18 * width / 1291 + 'pt';
 }
 
-(function () {
+function adjustAll() {
 
-    var height = adjustHeight('header', 35);
+	var height = adjustHeight('header', 35);
 
     locate('link1', 25, 20, height);
     locate('link2', 53, 35, height);
@@ -35,5 +35,11 @@ function adjustLinkFont(elem, parent) {
 
     	adjustLinkFont('link' + i, 'header');
     }
+}
+
+(function () {
+
+	window.onresize = adjustAll;
+    adjustAll();
 
 })(); 
