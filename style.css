@@ -144,7 +144,9 @@ img.logo {
 
 a.eventlink {
 
-	display: block;
+	display: inline-block;
+	position: static;
+	float: left;
 	background-color: white;
 	border: 2px solid grey;
 	width: 8%;
