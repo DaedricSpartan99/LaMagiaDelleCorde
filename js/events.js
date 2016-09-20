@@ -12,53 +12,18 @@ function createLink(id, page, urlimage, date, title) {
 	return a;
 }
 
-function getEventImage(config) {
-
-	var obj = JSON.parse($.getJSON(config));
-
-	return obj.img;
-}
-
-function getEventDate(config) {
-
-	var obj = JSON.parse($.getJSON(config));
-
-	return obj.date;
-}
-
 function customEvents(dirlist) {
 
-	var dir;
-	for (dir in dirlist) {
+	for (var dir in dirlist) {
 
-		var config = 'eventi/' + dir + '/config.json';
-		var a = createLink(dir.replace(' ', '_'), 'eventi/' + dir + '/' + dir + '.html', getEventImage(config), getEventDate(config), dir);
+  		window.alert(dir);
+
+  		var config = '../eventi/' + dir + '/config.json';
+  		var obj = jQuery.parseJSON($.getJSON(config));
+
+  		window.alert(obj.img);
+  		window.alert(obj.date);
+
+		var a = createLink(dir.replace(' ', '_'), '../eventi/' + dir + '/pagina.html', obj.img, obj.date, dir);
 	}
 }
-
-function getEvents() {
-
-	var res = $.getJSON('result.json');
-
-	var j;
-	for (j in res)
-		window.alert(j);
-
-	var out = new array();
-
-	var i;
-	for (i in res) {
-
-		out.push(i.split(":")[1]);
-	}
-
-	return out;
-}
-
-(function() {
-
-	var dirs = getEvents();
-	window.alert(dirs[0]);
-	customEvents(dirs);
-
-})();

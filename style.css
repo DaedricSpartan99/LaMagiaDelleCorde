@@ -20,6 +20,7 @@ body {
 
 	padding-right: 0;
 	margin-right: 0;
+	min-width: 1000px;
 }
 
 h1 {
@@ -38,7 +39,7 @@ h2 {
 
 p {
 
-	color: darkblue;
+	color: black;
 	float: left;
 	font-size: 14pt;
 	font-family: 'Bradley Hand ITC';
@@ -102,7 +103,7 @@ img.logo {
 	height: auto;
 	float: left;
 	clear: both;
-	background: url(res/sfondo.jpg) no-repeat center center;
+	background: url(res/sfondo1.jpg) no-repeat center center;
 	background-size: 100% 100%;
 	overflow: hidden;
 	display: flex;
@@ -110,7 +111,7 @@ img.logo {
 
 .content {
 
-	background-color: rgba(220, 220, 220, 0.7);
+	background-color: rgba(220, 220, 220, 0.8);
 	margin-left: 12%;
   	width: 70%;
 	float: left;
@@ -131,7 +132,7 @@ img.logo {
 	float: left;
 	clear: both;
 	font-size: 45pt;
-	color: #000099;
+	color: #000066;
 	font-family: 'Bradley Hand ITC';
 	font-weight: bold;
 	margin: auto;
@@ -169,7 +170,7 @@ h2.eventdate {
 	font-family: 'Freestyle Script';
 }
 
-h3.eventitle {
+h3.eventtitle {
 
 	color: black;
 	text-align: center;
@@ -177,4 +178,18 @@ h3.eventitle {
 	width: 100%;
 	font-family: 'Freestyle Script';
 	background-color: rgb(220, 220, 220);
+}
+
+*.subcontent {
+
+
+}
+
+#poesia {
+
+	text-align: center;
+	font-family: 'Bradley Hand ITC';
+	font-weight: bold;
+	margin-left: 35%;
+	clear: both;
 }
