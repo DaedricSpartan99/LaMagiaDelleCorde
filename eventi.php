@@ -2,6 +2,60 @@
 
 <?php
 
+    function existsUrl($xml, $value) {
+        
+        foreach($xml->children() as $url) {
+            
+            if (strcmp($url->loc, $value) == 0) {
+                
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
+    function siteMapUpdate($dirlist) {
+
+		$addr = "http://postgrammingide.ch/";
+
+		$sitemap = simplexml_load_file("sitemap.xml") or die("Error: Cannot create object");
+		
+		if ($sitemap === false) {
+		    
+            echo "Failed loading XML: ";
+            
+            foreach(libxml_get_errors() as $error) {
+                
+                echo "<br>", $error->message;
+            }
+        }
+        
+        $urlset = $sitemap->urlset[0];
+		$modified = false;
+
+		foreach($dirlist as $dir) {
+
+			$page = $addr . $dir . "pagina.html";
+
+			if (!existsUrl($sitemap, $page)) {
+			    
+			    echo '<script>console.log("Adding '. $page.' to sitemap.xml")</script>', PHP_EOL;
+			    
+			    $newuri = $sitemap->addChild("url");
+			    $newuri->addChild("loc", $page);
+			    $modified = true;
+			    
+			    echo '<script>console.log("'. $page.' added to sitemap.xml")</script>', PHP_EOL;
+			}
+		}
+
+		if ($modified) {
+
+			$sitemap->asXml("sitemap.xml");
+		}
+	}
+
 	function listEvents() {
 
 		$out = array();
@@ -15,7 +69,7 @@
 			    continue;
 			}
 			        
-			echo '<script>console.log("'. $realdir .'")</script>';
+			echo '<script>console.log("Event list add: '. $realdir .'")</script>';
 
     		array_push($out, $realdir);
 		}
@@ -91,7 +145,12 @@
 
 				<h1 id="titolo"> Eventi </h1>
 
-				<?php customEvents(listEvents()); ?>
+				<?php 
+				    
+				    $dirs = listEvents();
+				    siteMapUpdate($dirs);
+				    customEvents($dirs); 
+				?>
 
 			</div>
 
