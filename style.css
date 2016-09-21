@@ -106,7 +106,7 @@ img.logo {
 	background: url(res/sfondo3.jpg) no-repeat center center;
 	background-size: 100% 100%;
 	overflow: hidden;
-	display: flex;
+	/*display: flex;*/
 }
 
 .content {
@@ -123,7 +123,7 @@ img.logo {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	align-items: stretch;
-
+	margin-right: 15%;	/*force other div lay down*/
 }
 
 #titolo {
@@ -194,4 +194,17 @@ h3.eventtitle {
 	font-weight: bold;
 	margin-left: 35%;
 	clear: both;
+}
+
+#copyright {
+
+	width: 93%;
+	float: left;
+	clear: both;
+	text-align: right;
+	font-size: 12pt;
+	color: #E0E0E0;
+	margin-right: 7%;
+	height: 50px;
+	bottom: 0;
 }
