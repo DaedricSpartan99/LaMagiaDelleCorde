@@ -96,14 +96,14 @@ img.logo {
     float: left;
 }
 
-.container {
+#container {
 
 	width: 100%;
 	min-height: 500px;
 	height: auto;
 	float: left;
 	clear: both;
-	background: url(res/sfondo3.jpg) no-repeat center center;
+	background: url(res/sfondo3.png) no-repeat center center;
 	background-size: 100% 100%;
 	overflow: hidden;
 	/*display: flex;*/

@@ -139,7 +139,7 @@
 
 		</div>
 
-		<div class="container">
+		<div id="container">
 
 			<div class="content">
 
