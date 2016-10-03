@@ -145,12 +145,16 @@
 
 				<h1 id="titolo"> Eventi </h1>
 
-				<?php 
+				<div id="dati">
+
+					<?php 
 				    
-				    $dirs = listEvents();
-				    siteMapUpdate($dirs);
-				    customEvents($dirs); 
-				?>
+				    	$dirs = listEvents();
+				    	siteMapUpdate($dirs);
+				    	customEvents($dirs); 
+					?>
+
+				</div>
 
 			</div>
 

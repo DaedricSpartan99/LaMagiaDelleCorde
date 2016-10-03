@@ -182,18 +182,120 @@ h3.eventtitle {
 	background-color: rgb(220, 220, 220);
 }
 
-*.subcontent {
+#dati {
 
-
+	width: 100%;
+	min-height: 200px;
+	clear: both;
 }
 
-#poesia {
+p.scritto {
 
-	text-align: center;
 	font-family: 'Bradley Hand ITC';
+	width: 45%;
+	max-width: 45%;
 	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+p.scritto.a_destra {
+
+	float: right;
+	clear: right;
+	text-align: left;
+}
+
+p.scritto.a_sinistra {
+
+	float: left;
+	clear: left;
+	text-align: left;
+}
+
+p.scritto.al_centro {
+
+	float: left;
+	width: 100%;
+	text-align: center;
+	clear: both;
+}
+
+img.immagine {
+
+	max-width: 50%;
+	width: 45%;
+	height: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.a_destra {
+
+	float: right;
+	clear: right;
+}
+
+.a_sinistra {
+
+	float: left;
+	clear: left;
+}
+
+.al_centro {
+
+	float: left;
 	margin-left: 35%;
 	clear: both;
+}
+
+ul.lista {
+
+	list-style-type: square;
+	padding-left: 20px;
+	font-family: 'Bradley Hand ITC';
+	font-weight: bold;
+	font-size: 16pt;
+	max-width: 45%;
+	margin-bottom: 10px;
+}
+
+ul.lista li {
+
+	margin-bottom: 20px;
+}
+
+h2.titolo_sezione {
+
+	background: none;
+	font-family: 'Bradley Hand ITC';
+	font-size: 30pt;
+	width: 90%;
+	float: left;
+	clear: both;
+	font-weight: bold;
+	padding-left: 2%;
+	color: #404040;
+	margin-bottom: 20px;
+}
+
+h3.sottotitolo_sezione {
+
+	background: none;
+	font-family: 'Bradley Hand ITC';
+	font-size: 20pt;
+	float: left;
+	font-weight: bold;
+	max-width: 48%;
+	padding-left: 5%;
+	color: #000066;
+	margin-bottom: 20px;
+}
+
+h3.sottotitolo_sezione.a_destra {
+
+	text-align: left;
+	min-width: 45%;
+	float: right;
 }
 
 #copyright {
@@ -207,4 +309,18 @@ h3.eventtitle {
 	margin-right: 7%;
 	height: 50px;
 	bottom: 0;
+}
+
+/*Relativamente alle varie sezioni*/
+
+#poesia {
+
+	font-style: italic;
+}
+
+#tassa_amministrativa {
+
+	font-size: 20pt;
+	font-style: italic;
+	text-decoration: underline;
 }
