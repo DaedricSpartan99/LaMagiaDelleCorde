@@ -23,20 +23,6 @@ body {
 	min-width: 1000px;
 }
 
-h1 {
-
-	font-size: 18pt;
-	font-weight: bold;
-	color: rgb(90, 60, 30);
-}
-
-h2 {
-
-	font-size: 14pt;
-	font-weight: bold;
-	font-family: "Times new roman";
-}
-
 p {
 
 	color: black;
@@ -187,75 +173,86 @@ h3.eventtitle {
 	width: 100%;
 	min-height: 200px;
 	clear: both;
+	overflow: auto;
 }
 
-p.scritto {
+div.destra {
 
-	font-family: 'Bradley Hand ITC';
-	width: 45%;
-	max-width: 45%;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-p.scritto.a_destra {
-
+	max-width: 47%;
+	min-width: 47%;
+	overflow: auto;
 	float: right;
 	clear: right;
-	text-align: left;
 }
 
-p.scritto.a_sinistra {
+div.sinistra {
 
+	max-width: 47%;
+	min-width: 47%;
+	overflow: auto;
 	float: left;
 	clear: left;
+}
+
+p.testo, p.scritto {
+
+	font-family: 'Bradley Hand ITC';
+	/*max-width: 95%;*/
+	width: 95%;
+	padding-left: 5%;
+	font-weight: bold;
+	margin-bottom: 20px;
 	text-align: left;
-}
-
-p.scritto.al_centro {
-
-	float: left;
-	width: 100%;
-	text-align: center;
-	clear: both;
-}
-
-img.immagine {
-
-	max-width: 50%;
-	width: 45%;
-	height: auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
 }
 
 .a_destra {
 
+	max-width: 45%;
 	float: right;
 	clear: right;
 }
 
 .a_sinistra {
 
+	max-width: 45%;
 	float: left;
 	clear: left;
 }
 
-.al_centro {
+.centrato, .al_centro {
 
 	float: left;
-	margin-left: 35%;
+	margin-left: 25%;
+	margin-right: 25%;
+	max-width: 50%;
+	width: 50%;
 	clear: both;
+}
+
+p.scritto.centrato, p.scritto.al_centro, p.testo.centrato, p.testo.al_centro {
+
+	padding-left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+img.immagine {
+
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 ul.lista {
 
 	list-style-type: square;
-	padding-left: 20px;
+	padding-left: 10%;
 	font-family: 'Bradley Hand ITC';
 	font-weight: bold;
 	font-size: 16pt;
-	max-width: 45%;
+	max-width: 90%;
+	min-width: 90%;
 	margin-bottom: 10px;
 }
 
@@ -269,12 +266,11 @@ h2.titolo_sezione {
 	background: none;
 	font-family: 'Bradley Hand ITC';
 	font-size: 30pt;
-	width: 90%;
-	float: left;
-	clear: both;
+	width: 98%;
 	font-weight: bold;
 	padding-left: 2%;
 	color: #404040;
+	clear: both;
 	margin-bottom: 20px;
 }
 
@@ -283,19 +279,13 @@ h3.sottotitolo_sezione {
 	background: none;
 	font-family: 'Bradley Hand ITC';
 	font-size: 20pt;
-	float: left;
 	font-weight: bold;
-	max-width: 48%;
-	padding-left: 5%;
+	width: 90%;
+	text-align: left;
+	clear: both;
+	padding-left: 10%;
 	color: #000066;
 	margin-bottom: 20px;
-}
-
-h3.sottotitolo_sezione.a_destra {
-
-	text-align: left;
-	min-width: 45%;
-	float: right;
 }
 
 #copyright {
