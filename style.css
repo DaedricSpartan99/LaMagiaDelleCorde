@@ -27,23 +27,75 @@ body {
 	clear: both;
 	width: 100%;
 	height: 400px;
-	background-color: #E0E0E0;
+	background-color: #FFFFFF;
 }
 
 #logo {
 
 	float: left;
 	clear: left;
-	margin-top: 15%;
+	margin-top: 50px;
 	margin-left: 7%;
-	margin-right: 3%;
+	margin-right: 5%;
 	width: 25%;
 	height: auto;
 	box-shadow: 10px 10px 5px grey;
 }
 
+#menu {
+
+	display: inline-block;
+	max-width: 80%;
+	margin-top: 180px;
+}
+
+#menu li {
+
+	display: block;
+	float: left;
+	min-width: 100px;
+	padding-left: 40px;
+	background-image: url(res/nota.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position: left top;
+}
+
+#menu li.up {
+
+	margin-bottom: 100px;
+	margin-top: 0;
+}
+
+#menu li.down {
+
+	margin-top: 100px;
+	margin-bottom: 0;
+}
+
+#menu li:hover {
+
+	background-image: url(res/doppia-nota.png);
+}
+
+a.link {
+
+	text-align: center;
+	font-size: 20pt;
+	font-style: italic;
+	text-decoration: none;
+	font-family: "Bradley Hand ITC";
+	font-weight: bold;
+}
+
+a.link:hover, a.link:active {
+
+	
+}
+
 #content {
 
 	width: 100%;
+	background-color: #E0E0E0;
 }
 
