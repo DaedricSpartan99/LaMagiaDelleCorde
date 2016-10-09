@@ -9,6 +9,28 @@
 		<meta name="description" content="Sito ufficiale de La Magia Delle Corde">
 		<link title="style" media="screen" rel="stylesheet" href="style.css" type="text/css">
 
+		<script>
+
+		function initMap() {
+	
+	var uluru = {lat: 46.186603, lng: 9.017648};
+
+    var map = new google.maps.Map(document.getElementById('mappa'), {
+
+        zoom: 14,
+        center: uluru
+    });
+
+    var marker = new google.maps.Marker({
+
+        position: uluru,
+        map: map
+    });
+
+}
+
+		</script>
+
 	</head>
 
 	<body>
@@ -53,7 +75,11 @@
 
 					</div>
 
-					<img class="immagine a_destra" id="mappa" src="res/mappa.png" alt="Mappa"/>
+					<div class="a_destra" id="mappa"> </div>
+
+					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZAgI45PQo9xWPhnE6hjcCob_2vf0T-1o&callback=initMap">
+    				</script>
+
 
 				</div>
 
