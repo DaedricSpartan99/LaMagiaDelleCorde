@@ -161,6 +161,19 @@ a.link:hover, a.link:active {
 	padding-bottom: 30px;
 }
 
+#titolo {
+
+	float: left;
+	clear: both;
+	max-width: 90%;
+	padding-left: 10%;
+	/*background-image: url(icona-titolo.png);*/
+	font-size: 35pt;
+	font-family: 'Freestyle Script';
+	font-weight: bold;
+	font-style: italic;
+}
+
 div.destra {
 
 	max-width: 47%;
@@ -252,8 +265,8 @@ ul.lista li {
 h2.titolo_sezione {
 
 	background: none;
-	font-family: 'Bradley Hand ITC';
-	font-size: 30pt;
+	font-family: 'Freestyle Script';
+	font-size: 25pt;
 	width: 98%;
 	font-weight: bold;
 	padding-left: 2%;
@@ -265,7 +278,7 @@ h2.titolo_sezione {
 h3.sottotitolo_sezione {
 
 	background: none;
-	font-family: 'Bradley Hand ITC';
+	font-family: 'Freestyle Script';
 	font-size: 20pt;
 	font-weight: bold;
 	width: 90%;
