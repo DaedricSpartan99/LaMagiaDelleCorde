@@ -50,9 +50,9 @@ body {
 	width: 100%;
 	height: auto;
 
-	-moz-transition: transform 2s linear;
-	-webkit-transition: transform 2s linear;
-	transition: transform 2s linear;
+	-moz-transition: -moz-transform 2s;
+	-webkit-transition: -webkit-transform 2s;
+	transition: transform 2s;
 }
 
 #logolink:hover {
