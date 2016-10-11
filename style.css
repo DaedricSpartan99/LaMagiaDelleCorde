@@ -39,26 +39,23 @@ body {
 	width: 25%;
 	margin-top: 50px;
 	margin-left: 7%;
-	margin-right: 5%;
+	margin-right: 3%;
 	padding: 3px;
 	float: left;
 	clear: left;
 	box-shadow: 10px 10px 5px grey;
 	outline: 0;
 	background-color: white;
+
+	-moz-transition: -moz-transform 3s, opacity 1s linear;
+	-webkit-transition: -webkit-transform 3s, opacity 1s linear;
+	transition: transform 3s, opacity 1s linear;
 }
 
 #logo {
 
 	width: 100%;
 	height: auto;
-}
-
-#logolink {
-
-	-moz-transition: -moz-transform 3s, opacity 1s linear;
-	-webkit-transition: -webkit-transform 3s, opacity 1s linear;
-	transition: transform 3s, opacity 1s linear;
 }
 
 #logolink:hover {
@@ -87,9 +84,9 @@ body {
 	padding: 10px;
 	padding-top: 15px;
 
-	transition: background-color 1s, opacity 2s;
-	-webkit-transition: background-color 1s, opacity 2s;
-	-moz-transition: background-color 1s, opacity 2s;
+	transition: background-color 0.5s, opacity 1s;
+	-webkit-transition: background-color 0.5s, opacity 1s;
+	-moz-transition: background-color 0.5s, opacity 1s;
 }
 
 #menu li.up {
@@ -132,15 +129,15 @@ a.link:link , a.link:visited {
 	
 	transition-property: color, padding-left, background-image;
 	transition-timing-function: linear, linear, ease;
-	transition-duration: 1s;
+	transition-duration: 1s, 0.5s, 1s;
 
 	-webkit-transition-property: color, padding-left, background-image;
 	-webkit-transition-timing-function: linear, linear, ease;
-	-webkit-transition-duration: 1s;
+	-webkit-transition-duration: 1s, 0.5s, 1s;
 
 	-moz-transition-property: color, padding-left;
 	-moz-transition-timing-function: linear;
-	-moz-transition-duration: 1s;
+	-moz-transition-duration: 1s, 0.5s;
 }
 
 a.link:hover, a.link:active {
@@ -154,7 +151,7 @@ a.link:hover, a.link:active {
 
 	float: left;
 	clear: both;
-	width: 100%;
+	width: 90%;
 	min-height: 400px;
 	background-color: #FFFFFF;
 	overflow: auto;
