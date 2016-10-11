@@ -50,13 +50,16 @@ body {
 	width: 100%;
 	height: auto;
 
-	-webkit-transition: background-image 2s ease;
-	transition: background-image 2s ease;
+	-moz-transition: transform 2s linear;
+	-webkit-transition: transform 2s linear;
+	transition: transform 2s linear;
 }
 
 #logolink:hover {
 
-	background-image: url(res/sfuma-gialla.png);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 #menu {
