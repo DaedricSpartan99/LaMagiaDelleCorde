@@ -23,6 +23,7 @@ body {
 	min-width: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
+	background-color: #CCCCFF;
 }
 
 #header {
@@ -158,7 +159,6 @@ a.link:hover, a.link:active {
 	padding-right: 5%;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-color: #CCCCFF;
 }
 
 #content {
@@ -192,6 +192,23 @@ a.link:hover, a.link:active {
 	font-family: 'Freestyle Script';
 	font-weight: bold;
 	font-style: italic;
+}
+
+#copyright {
+
+	float: left;
+	clear: both;
+	color: #606060;
+	margin-left: 10%;
+	margin-right: 10%;
+	min-height: 80px;
+	width: 80%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px solid #b89d5c;
+	text-align: center;
+	font-size: 14pt;
+	font-family: 'Freestyle Script';
 }
 
 /* Per la homepage */
