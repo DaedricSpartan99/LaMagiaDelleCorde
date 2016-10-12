@@ -210,6 +210,33 @@ a.link:hover, a.link:active {
 	font-family: 'Freestyle Script';
 }
 
+/* Per gli eventi */
+
+a.eventlink {
+
+	outline: 0;
+}
+
+img.eventimg {
+
+	width: 100%;
+}
+
+img.eventimg:hover {
+
+
+}
+
+h2.eventtitle {
+
+
+}
+
+h3.eventdate {
+
+
+}
+
 /* Per la homepage */
 
 #poesia {
@@ -299,6 +326,7 @@ p.testo {
 	clear: both;
 	margin-bottom: 20px;
 	text-align: left;
+	font-size: 16pt;
 }
 
 p.testo.centrato {
