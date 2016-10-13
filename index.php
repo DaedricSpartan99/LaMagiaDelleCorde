@@ -31,10 +31,10 @@
 
 		<div id="container">
 
-			<div id="slideshow">
+			<div onmouseover="slideShowOver()" onmouseout="slideShowExit()" id="slideshow">
 
 				<button class="arrow" id="leftarrow" onclick="next()">&#10094</button>
-				<button class="arrow" id="leftarrow" onclick="next()">&#10095</button>
+				<button class="arrow" id="rightarrow" onclick="next()">&#10095</button>
 
 				<?php
 
