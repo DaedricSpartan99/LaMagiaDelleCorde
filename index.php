@@ -15,15 +15,15 @@
 
 		<div id="header">
 
-			<a id="logolink" href="index.html"><img id="logo" src="res/logo1.png" alt="La magia delle corde" /></a>
+			<a id="logolink" href="index.php"><img id="logo" src="res/logo1.png" alt="La magia delle corde" /></a>
 
 			<ul id="menu">
 
-				<li class="up"><a class="link" href="index.html">Home</a></li>
-				<li class="down"><a class="link" href="lascuola.html">La scuola</a></li>
-				<li class="up"><a class="link" href="iscrizione.html">Iscrizione</a></li>
-				<li class="down"><a class="link" href="corsi.html">Corsi</a></li>
-				<li class="up"><a class="link" href="contatti.html">Contatti</a></li>
+				<li class="up"><a class="link" href="index.php">Home</a></li>
+				<li class="down"><a class="link" href="lascuola.php">La scuola</a></li>
+				<li class="up"><a class="link" href="iscrizione.php">Iscrizione</a></li>
+				<li class="down"><a class="link" href="corsi.php">Corsi</a></li>
+				<li class="up"><a class="link" href="contatti.php">Contatti</a></li>
 
 			</ul>
 
@@ -32,6 +32,9 @@
 		<div id="container">
 
 			<div id="slideshow">
+
+				<button class="arrow" id="leftarrow" onclick="next()">&#10094</button>
+				<button class="arrow" id="leftarrow" onclick="next()">&#10095</button>
 
 				<?php
 
