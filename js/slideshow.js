@@ -2,7 +2,7 @@
 var elements;
 var current;
 
-function switch(index) {
+function switchTo(index) {
 
 	if (index < 0 || index >= elements.length)
 		return;
@@ -36,13 +36,22 @@ var timer = 5000; /* milliseconds */
 
 function selfSwitch() { 	// Call this function at the end of the document
 
+	if (elements.length == 0)
+		return;
+
 	next();
 	setTimeout(selfSwitch, timer);	/* execute this function recursively */
 }
 
 (function() {
 
-	elements = documents.getElementsByClassName('eventlink');
+	console.log("Funziona...");
+	elements = document.getElementsByClassName('eventlink');
+
+	if (elements.length == 0)
+		return;
+
 	elements[0].style.display = 'block';
 	current = 0;
+
 })();

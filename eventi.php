@@ -78,13 +78,22 @@
 	function createEventLink($page, $obj) {
 
 		echo '<a href="'. $page .'" id="'. $obj['name'] .'" class="eventlink">', PHP_EOL;
+		echo '    <h2 class="eventtitle">'. $obj['name'] .'</h2>', PHP_EOL;
 		echo '    <img class="eventimg" src="'. $obj['img'] .'" alt="Foto evento"/>', PHP_EOL;
-		echo '    <h2 class="eventtitle">'. $obj['date'] .'</h2>', PHP_EOL;
-		echo '    <h3 class="eventdate">'. $obj['name'] .'</h3>', PHP_EOL;
+		echo '    <h3 class="eventdate">'. $obj['date'] .'</h3>', PHP_EOL;
 		echo '</a>', PHP_EOL;
 	}
 
-	function customEvents($dirlist) {
+	function customEvents() {
+
+		$dirlist = listEvents();
+
+		if ($dirlist == NULL || sizeof($dirlist) == 0) {
+
+			$obj = array("name"=>"Nessun Evento", "img"=>"res/no-image.png", "date"=>"...");
+			createEventLink("index.php", $obj);
+			return;
+		}
 
 		foreach ($dirlist as $dir) {
 
@@ -100,7 +109,7 @@
 				return;
 			}
 
-			$page = $dir . "pagina.html";
+			$page = $dir . "pagina.php";
 			$obj['img'] = $dir . $obj['img'];
 
 			createEventLink($page, $obj);

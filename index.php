@@ -33,15 +33,12 @@
 
 			<div id="slideshow">
 
-				<a class="eventlink" href="index.html">
+				<?php
 
-					<h2 class="eventtitle">Template</h2>
+					include 'eventi.php';
+					customEvents();
 
-					<img class="eventimg" src="eventi/template/template.jpg" alt="evento"/>
-
-					<h3 class="eventdate">12.08.1997</h3>
-
-				</a>
+				?>
 
 			</div>
 
@@ -78,7 +75,8 @@
 
 		</p>
 
-		<script src="js/bounds.js"></script>
+		<script type="text/javascript" src="js/bounds.js"></script>
+		<script type="text/javascript" src="js/slideshow.js"></script>
 
 	</body>
 
