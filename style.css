@@ -344,13 +344,13 @@ div.sezione.bi-colonna {
     -moz-column-count: 2;
     column-count: 2;
 
-    -webkit-column-gap: 3%;
-    -moz-column-gap: 3%;
-    column-gap: 3%;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
 
-    -webkit-column-rule: 1px solid lightblue;
-    -moz-column-rule: 1px solid lightblue;
-    column-rule: 1px solid lightblue;
+    -webkit-column-rule: 1px solid #b89d5c;
+    -moz-column-rule: 1px solid #b89d5c;
+    column-rule: 1px solid #b89d5c;
 
     -webkit-column-width: %;
     -moz-column-width: 47%;
@@ -363,39 +363,25 @@ div.sezione.tri-colonna {
     -moz-column-count: 3;
     column-count: 3;
 
-    -webkit-column-gap: 3%;
-    -moz-column-gap: 3%;
-    column-gap: 3%;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
 
-    -webkit-column-rule: 1px solid lightblue;
-    -moz-column-rule: 1px solid lightblue;
-    column-rule: 1px solid lightblue;
+    -webkit-column-rule: 1px solid #b89d5c;
+    -moz-column-rule: 1px solid #b89d5c;
+    column-rule: 1px solid #b89d5c;
 
     -webkit-column-width: 30%;
     -moz-column-width: 30%;
     column-width: 30%;
 }
 
-.1-2 {
-
-	width: 50%;
-}
-
-.1-3 {
-
-	width: 33%;
-}
-
-.1-4 {
-
-	width: 25%;
-}
-
 p.testo {
 
 	font-family: 'Bradley Hand ITC';
-	width: 95%;
+	width: 90%;
 	padding-left: 5%;
+	padding-right: 5%;
 	font-weight: bold;
 	float: left;
 	clear: both;
@@ -466,4 +452,34 @@ h3.sottotitolo_sezione {
 	padding-left: 10%;
 	color: #000066;
 	margin-bottom: 20px;
+}
+
+div.sezione.meta {
+
+	width: 50%;
+}
+
+div.sezione.terzo {
+
+	width: 33%;
+}
+
+div.sezione.quarto {
+
+	width: 25%;
+}
+
+img.immagine.meta {
+
+	width: 50%;
+}
+
+img.immagine.terzo {
+
+	width: 33%;
+}
+
+img.immagine.quarto {
+
+	width: 25%;
 }

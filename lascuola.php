@@ -15,29 +15,41 @@
 
 		<div id="header">
 
-			<div class="menu">
+			<a id="logolink" href="index.php"><img id="logo" src="res/logo1.png" alt="La magia delle corde" /></a>
 
-				<a class="link" id="link1" href="index.html">Homepage</a>
-				<a class="link" id="link2" href="eventi.php">Eventi</a>
-				<a class="link" id="link3" href="iscrizione.html">Iscriviti</a>
-				<a class="link" id="link4" href="corsi.html">Corsi</a>
-				<a class="link" id="link5" href="contatti.html">Contatti</a>
+			<ul id="menu">
 
-			</div>
+				<li class="up"><a class="link" href="index.php">Home</a></li>
+				<li class="down"><a class="link" href="lascuola.php">La scuola</a></li>
+				<li class="up"><a class="link" href="iscrizione.php">Iscrizione</a></li>
+				<li class="down"><a class="link" href="corsi.php">Corsi</a></li>
+				<li class="up"><a class="link" href="contatti.php">Contatti</a></li>
 
-			<img class="logo" src="res/logo1.png" alt="La magia delle corde" />
+			</ul>
 
 		</div>
 
 		<div id="container">
 
-			<div class="content">
+			<!--<div onmouseover="slideShowOver()" onmouseout="slideShowExit()" id="slideshow">-->
 
-				<h1 id="titolo"> La scuola </h1>
+				<!--<button class="arrow" id="leftarrow" onclick="next()">&#10094</button>
+				<button class="arrow" id="rightarrow" onclick="next()">&#10095</button>-->
 
-				<div id="dati">
+			<div id="slideshow">
 
-					<h2 class="titolo_sezione">Obiettivi</h2>
+				<?php
+
+					include 'eventi.php';
+					customEvents();
+
+				?>
+
+			</div>
+
+			<div id="description">
+
+				<h2 class="titolo_sezione">Obiettivi</h2>
 
 					<p class="testo">
 
@@ -49,11 +61,19 @@ Le scelte adottate si svilupperanno all'interno di una precisa organizzazione di
 
 					</p>
 
-					<h2 class="titolo_sezione">La Docente Anna Maria Bergna</h2>
+			</div>
 
-					<p class="testo">
+		</div>
 
-						Ha compiuto gli studi di chitarra con i maestri Eleni Kokkaliari e Ruggero Chiesa nel 1990 presso il Conservatorio "Venturi" di Brescia. Ha seguito corsi di perfezionamento per chitarra con i maestri R.Chiesa e O.Ghiglia.
+		<div id="content">
+
+			<h2 class="titolo_sezione">La Docente Anna Maria Bergna</h2>
+
+			<div class="sezione bi-colonna">
+
+				<p class="testo">
+
+					Ha compiuto gli studi di chitarra con i maestri Eleni Kokkaliari e Ruggero Chiesa nel 1990 presso il Conservatorio "Venturi" di Brescia. Ha seguito corsi di perfezionamento per chitarra con i maestri R.Chiesa e O.Ghiglia.
 Nel 1994 si diploma in Didattica della Musica presso il Conservatorio "G.Verdi" di Como, con la tesi: "Un Aspetto del Seicento Comasco: Bottaccio, Rusca, Raimondi e la letteratura per liuto e chitarra, con appendice di trascrizioni inedite". Approfondisce inoltre gli studi in composizione e direzione di coro.
 Ha tenuto concerti sia come solista che in varie formazioni cameristiche, per diversi enti e associazioni: Agimus, Compagnia teatrale "Citt&agrave di Como", Amici della Musica di Galliate, Giovent&ugrave Musicale d'Italia, e nel 2001, in qualit&agrave di solista, con l'orchestra sinfonica "Oltenia" di Craiova (Romania).
 Nel 1996 ha pubblicato un articolo sulla didattica strumentale per chitarra per la rivista internazionale di cultura e pedagogia musicale "Musica Domani" edizione Ricordi.
@@ -64,17 +84,23 @@ Nel 2010 ha contribuito alla realizzazione del CD: "W la Suisse" con la Doro Doc
 Dal 1991 al 2014 ha svolto la propria attivit&agrave quale docente di chitarra presso il Conservatorio della Svizzera Italiana, e dal 2012 &egrave docente di musica strumentale nei Licei Cantonali di Lugano 1 e 2 e Mendrisio.
 &Egrave membro della sezione di lingua italiana della Societ&agrave Svizzera di Pedagogia Musicale(SSPM).
 
-					</p>
+				</p>
 
-				</div>
+				<img class="immagine meta" src="res/annamaria.jpg" alt="Annamaria" />
 
 			</div>
 
-			<p id="copyright"> &#64 Copyright. All Rights Reserved | By Raffaele Ancarola &#38 Lia Rampazzi </p>
-
 		</div>
 
-		<script src="js/bounds.js"></script>
+		<p id="copyright">
+
+			&#64 Copyright | All Rights Reserved <br>
+			Raffaele Ancarola
+
+		</p>
+
+		<script type="text/javascript" src="js/bounds.js"></script>
+		<script type="text/javascript" src="js/slideshow.js"></script>
 
 	</body>
 
