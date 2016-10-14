@@ -23,7 +23,7 @@ body {
 	min-width: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
-	background-color: #CACAF5;
+	background-color: #C9C9E4;
 }
 
 #header {
@@ -189,7 +189,9 @@ a.link:hover, a.link:active {
 	width: 30%;
 	margin-top: 40px;
 	box-shadow: 10px 10px 5px grey;
-	background-color: white;
+	background-image: url(res/paper.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	position: relative;
 }
 
@@ -260,9 +262,10 @@ button.arrow {
 a.eventlink {
 
 	outline: 0;
-	width: 100%;
-	margin: 0;
-	padding: 0;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	/*padding-bottom: 20px;*/
 	display: none;
 }
 
@@ -272,6 +275,7 @@ img.eventimg {
 	height: 200px;
 	float: left;
 	clear: both;
+	margin-bottom: 10px;
 }
 
 img.eventimg:hover {
@@ -283,25 +287,27 @@ h2.eventtitle {
 
 	font-family: 'Freestyle Script';
 	font-size: 28pt;
-	color: darkblue;
+	color: #003954;
 	text-align: center;
 	width: 100%;
 	float: left;
 	clear: both;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	margin: 0;
+	outline: 0;
+	padding-top: 15px;
+	padding-bottom: 0;
+	margin-bottom: -10px;
 }
 
 h3.eventdate {
 
-	font-family: 'Bradley Hand ITC';
+	font-family: 'Freestyle Script';
 	font-size: 15pt;
 	color: black;
 	text-align: right;
 	width: 90%;
 	padding-right: 10%;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 5px;
 	float: left;
 	clear: both;
 }

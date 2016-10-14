@@ -79,8 +79,8 @@
 
 		echo '<a href="'. $page .'" id="'. $obj['name'] .'" class="eventlink">', PHP_EOL;
 		echo '    <h2 class="eventtitle">'. $obj['name'] .'</h2>', PHP_EOL;
-		echo '    <img class="eventimg" src="'. $obj['img'] .'" alt="Foto evento"/>', PHP_EOL;
 		echo '    <h3 class="eventdate">'. $obj['date'] .'</h3>', PHP_EOL;
+		echo '    <img class="eventimg" src="'. $obj['img'] .'" alt="Foto evento"/>', PHP_EOL;
 		echo '</a>', PHP_EOL;
 	}
 
