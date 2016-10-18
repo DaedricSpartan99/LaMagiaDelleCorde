@@ -12,8 +12,10 @@
 	</head>
 
 	<body>
+	    
+	<div id="cover">
 
-		<div id="header">
+		<div id="header" onmouseover="headerOver()" onmouseout="headerExit()">
 
 			<a id="logolink" href="index.php"><img id="logo" src="res/logo1.png" alt="La magia delle corde" /></a>
 
@@ -68,8 +70,34 @@
 		</div>
 
 		<div id="content">
+		    
+		    <div class="sezione bi-colonna">
 
-		<!-- Empty in the Homepage -->
+		        <a href="lascuola.php" class="squarelink" id="squarelascuola">
+		        
+		            <h2 class="squaretitle">La scuola</h2>
+		            <img class="squareimg" src="res/" alt="la scuola" />
+		        
+		            <p class="squaredesc">
+		            
+		                La scuola in breve
+		            
+		            </p>
+		        </a>
+		        
+		        <a href="lascuola.php" class="squarelink" id="squarecorsi">
+		        
+		            <h2 class="squaretitle">Corsi</h2>
+		            <img class="squareimg" src="res/" alt="corsi" />
+		        
+		            <p class="squaredesc">
+		            
+		                I corsi in breve
+		            
+		            </p>
+		        </a>
+		    
+		    </div>
 
 		</div>
 
@@ -82,6 +110,9 @@
 
 		<script type="text/javascript" src="js/bounds.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+		
+	</div>
 
 	</body>
 

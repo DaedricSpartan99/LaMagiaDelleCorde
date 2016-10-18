@@ -18,12 +18,19 @@
 
 body {
 
-	margin: 0;
+	
+}
+
+#cover {
+    
+    margin: 0;
 	padding: 0;
 	min-width: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
-	background-color: #C9C9E4;
+	background-color: #ECECEC;
+	z-index: -10;
+	position: absolute;
 }
 
 #header {
@@ -32,26 +39,35 @@ body {
 	clear: both;
 	width: 100%;
 	min-height: 400px;
-	background-image: url(res/header.png);
+	background-image: url(res/chitarra-bianca.png);
 	background-size: 100% 100%;
+	position: relative;
+	z-index: -2;
+	border-bottom: 5px solid rgba(6, 41, 59, 0.6);
 }
 
 #logolink {
 
-	width: 25%;
+	width: 27%;
 	margin-top: 50px;
-	margin-left: 7%;
+	margin-left: 5%;
 	margin-right: 3%;
 	padding: 3px;
 	float: left;
 	clear: left;
+	
 	box-shadow: 10px 10px 5px grey;
+	-webkit-box-shadow: 10px 10px 5px grey;
+	-moz-box-shadow: 10px 10px 5px grey;
+	
 	outline: 0;
+	border-left: 5px solid #06293b;
 	background-color: white;
 
 	-moz-transition: -moz-transform 1s, opacity 1s linear;
 	-webkit-transition: -webkit-transform 1s, opacity 1s linear;
 	transition: transform 1s, opacity 1s linear;
+	z-index: 0;
 }
 
 #logo {
@@ -72,8 +88,19 @@ body {
 #menu {
 
 	display: inline-block;
-	max-width: 80%;
-	margin-top: 180px;
+	width: 100%;
+	left: 0;
+	top: 20px;
+	padding-left: 38%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: -1;
+	position: absolute;
+	
+	transition: top 0.3s, padding-left 0.3s, background-color 0.3s;
+	-webkit-transition: top 0.3s, padding-left 0.3s, background-color 0.3s;
+	-moz-transition: top 0.3s, padding-left 0.3s, background-color 0.3s;
 }
 
 #menu li {
@@ -83,36 +110,37 @@ body {
 	min-width: 100px;
 	min-height: 50px;
 	border-radius: 1em;
-	padding: 10px;
-	padding-top: 15px;
+	padding: 6px;
+	padding-top: 10px;
+	margin-right: 10px;
 
-	transition: background-color 0.5s, opacity 1s;
-	-webkit-transition: background-color 0.5s, opacity 1s;
-	-moz-transition: background-color 0.5s, opacity 1s;
+	transition: background-color 0.5s, margin 0.5s linear 0.3s, opacity 1s;
+	-webkit-transition: background-color 0.5s, margin 0.5s linear 0.3s, opacity 1s;
+	-moz-transition: background-color 0.5s, margin 0.5s linear 0.3s, opacity 1s;
 }
 
-#menu li.up {
+ul li.up {
 
-	margin-bottom: 100px;
-	margin-top: 0;
+	/*margin-bottom: 100px;
+	margin-top: 0;*/
 }
 
-#menu li.down {
+ul li.down {
 
-	margin-top: 100px;
-	margin-bottom: 0;
+	/*margin-top: 100px;
+	margin-bottom: 0;*/
 }
 
 #menu li:hover {
 
-	background-color: #9999FF;
-	opacity: 0.7;
+	background-color: #6666ff;
+	opacity: 0.9;
 }
 
 a.link:link , a.link:visited {
 
 	text-align: center;
-	font-size: 20pt;
+	font-size: 18pt;
 	width: 100%;
 	font-style: italic;
 	text-decoration: none;
@@ -129,17 +157,17 @@ a.link:link , a.link:visited {
 	background-position: left top;
 	background-color: none;
 	
-	transition-property: color, padding-left, background-image;
-	transition-timing-function: linear, linear, ease;
-	transition-duration: 1s, 0.5s, 1s;
+	transition-property: color, padding-left, background-image, font-size;
+	transition-timing-function: linear, linear, ease, linear;
+	transition-duration: 1s, 0.5s, 1s, 0.5s;
 
-	-webkit-transition-property: color, padding-left, background-image;
-	-webkit-transition-timing-function: linear, linear, ease;
-	-webkit-transition-duration: 1s, 0.5s, 1s;
+	-webkit-transition-property: color, padding-left, background-image, font-size;
+	-webkit-transition-timing-function: linear, linear, ease, linear;
+	-webkit-transition-duration: 1s, 0.5s, 1s, 0.5s;
 
-	-moz-transition-property: color, padding-left;
+	-moz-transition-property: color, padding-left, font-size;
 	-moz-transition-timing-function: linear;
-	-moz-transition-duration: 1s, 0.5s;
+	-moz-transition-duration: 1s, 0.5s, 0.5s;
 }
 
 a.link:hover, a.link:active {
@@ -159,13 +187,18 @@ a.link:hover, a.link:active {
 	padding-right: 5%;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	background: #e3a43e;
+	background: linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);
+	background: -webkit-linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);
+	background: -o-linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);
+	background: -moz-linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);
 }
 
 #description {
 
 	float: right;
 	clear: right;
-	width: 50%;
+	width: 30%;
 	max-width: 50%;
 	background-color: #FFFFFF;
 	overflow-x: hidden;
@@ -186,7 +219,7 @@ a.link:hover, a.link:active {
 
 	float: left;
 	clear: left;
-	width: 30%;
+	width: 50%;
 	margin-top: 40px;
 	box-shadow: 10px 10px 5px grey;
 	background-image: url(res/paper.jpg);
@@ -272,7 +305,7 @@ a.eventlink {
 img.eventimg {
 
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	float: left;
 	clear: both;
 	margin-bottom: 10px;
@@ -316,7 +349,106 @@ h3.eventdate {
 
 #poesia {
 
-	font-size: 22pt;
+    margin-top: 20px;
+	font-size: 19pt;
+}
+
+a.squarelink {
+    
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    clear: both;
+    border-radius: 1em;
+    text-decoration: none;
+    
+    box-shadow: 10px 10px 5px grey;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+    
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+h2.squaretitle {
+    
+    font-family: "Freestyle Script";
+    font-size: 23pt;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    clear: both;
+    width: 100%;
+    color: #606060;
+    text-align: center;
+}
+
+img.squareimg {
+    
+    width: 90%;
+    height: 150px;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+    clear: both;
+}
+
+p.squaredesc {
+    
+    width: 90%;
+    padding-left: 10%;
+    font-family: "Bradley Hand ITC";
+    font-size: 14pt;
+    font-style: none;
+    font-variant: none;
+    color: black;
+    text-align: left;
+    padding-top: 15px;
+}
+
+#squarelascuola {
+    
+    float: right;
+    width: 50%;
+    margin-right: 50px;
+}
+
+#squarecorsi {
+    
+    float: left;
+    width: 50%;
+    margin-left: 50px;
+}
+
+/* per lascuola */
+
+#lascuolaimg {
+    
+    float: right;
+    clear: right;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    height: auto;
+    
+    box-shadow: 10px 10px 5px grey;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+    
+    margin-bottom: 15px;
+}
+
+/* Per i contatti */
+
+#mappa {
+
+	float: left;
+	clear: left;
+	width: 50%;
+	margin-top: 40px;
+	box-shadow: 10px 10px 5px grey;
+	min-height: 200px;
+	background-color: #ECECEC;
 }
 
 /* sezioni dinamiche */
@@ -326,6 +458,8 @@ div.sezione {
 	width: 100%;
 	float: left;
 	clear: both;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 div.sezione.grigio {
@@ -340,40 +474,49 @@ div.sezione.azzurro {
 
 div.sezione.bi-colonna {
 
+    column-count: 2;
 	-webkit-column-count: 2;
     -moz-column-count: 2;
-    column-count: 2;
 
+    column-gap: 50px;
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
-    column-gap: 50px;
 
+    column-rule: 1px solid #b89d5c;
     -webkit-column-rule: 1px solid #b89d5c;
     -moz-column-rule: 1px solid #b89d5c;
-    column-rule: 1px solid #b89d5c;
 
-    -webkit-column-width: %;
-    -moz-column-width: 47%;
     column-width: 47%;
+    -webkit-column-width: 47%;
+    -moz-column-width: 47%;
 }
 
 div.sezione.tri-colonna {
 
+    column-count: 3;
 	-webkit-column-count: 3;
     -moz-column-count: 3;
-    column-count: 3;
 
+    column-gap: 50px;
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
-    column-gap: 50px;
-
+    
+    column-rule: 1px solid #b89d5c;
     -webkit-column-rule: 1px solid #b89d5c;
     -moz-column-rule: 1px solid #b89d5c;
-    column-rule: 1px solid #b89d5c;
 
+    column-width: 30%;
     -webkit-column-width: 30%;
     -moz-column-width: 30%;
-    column-width: 30%;
+}
+
+div.sezione.ombreggiato {
+    
+    box-shadow: 10px 10px 5px grey;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+    
+    margin-bottom: 15px;
 }
 
 p.testo {
@@ -403,6 +546,15 @@ img.immagine {
 	height: auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+img.immagine.ombreggiato {
+    
+    box-shadow: 10px 10px 5px grey;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+    
+    margin-bottom: 15px;
 }
 
 ul.lista {

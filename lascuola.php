@@ -12,8 +12,10 @@
 	</head>
 
 	<body>
+	    
+	<div id="cover">
 
-		<div id="header">
+		<div id="header" onmouseover="headerOver()" onmouseout="headerExit()">
 
 			<a id="logolink" href="index.php"><img id="logo" src="res/logo1.png" alt="La magia delle corde" /></a>
 
@@ -47,29 +49,27 @@
 
 			</div>
 
-			<div id="description">
-
-				<h2 class="titolo_sezione">Obiettivi</h2>
-
-					<p class="testo">
-
-						Avvicinare il bambino sin dai 7 anni alla musica suonando la chitarra, in un percorso di esplorazione e scoperta di tutte le sue potenzialit&agrave sonore.
-Un approccio globale e creativo permette di scoprire le possibilit&agrave espressive del bambino, di accrescere le sue capacit&agrave di ascolto, il suo senso ritmico, la sua creativit&agrave, in breve: il piacere di fare musica. 
-Il corso &egrave rivolto a studenti in et&agrave scolare (dalle elementari all'universit&agrave) e intende fornire competenze musicali sia di carattere formativo/culturale che professionale.
-Il corso non esclude gli adulti, offrendo loro la possibilit&agrave di organizzare il proprio percorso di studio secondo le personali motivazioni, esigenze, disponibilit&agrave in termini di tempo. 
-Le scelte adottate si svilupperanno all'interno di una precisa organizzazione didattica, sia di tipo amatoriale che professionale.
-
-					</p>
-
-			</div>
+			<img id="lascuolaimg" src="res/" alt="Immagine per la scuola"/>
 
 		</div>
 
 		<div id="content">
 
-			<h2 class="titolo_sezione">La Docente Anna Maria Bergna</h2>
-
 			<div class="sezione bi-colonna">
+			    
+			    <h2 class="titolo_sezione">Obiettivi</h2>
+
+				<p class="testo">
+
+					Avvicinare il bambino sin dai 7 anni alla musica suonando la chitarra, in un percorso di esplorazione e scoperta di tutte le sue potenzialit&agrave sonore.
+Un approccio globale e creativo permette di scoprire le possibilit&agrave espressive del bambino, di accrescere le sue capacit&agrave di ascolto, il suo senso ritmico, la sua creativit&agrave, in breve: il piacere di fare musica. 
+Il corso &egrave rivolto a studenti in et&agrave scolare (dalle elementari all'universit&agrave) e intende fornire competenze musicali sia di carattere formativo/culturale che professionale.
+Il corso non esclude gli adulti, offrendo loro la possibilit&agrave di organizzare il proprio percorso di studio secondo le personali motivazioni, esigenze, disponibilit&agrave in termini di tempo. 
+Le scelte adottate si svilupperanno all'interno di una precisa organizzazione didattica, sia di tipo amatoriale che professionale.
+
+				</p>
+				
+				<h2 class="titolo_sezione">La Docente Anna Maria Bergna</h2>
 
 				<p class="testo">
 
@@ -101,6 +101,9 @@ Dal 1991 al 2014 ha svolto la propria attivit&agrave quale docente di chitarra p
 
 		<script type="text/javascript" src="js/bounds.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+		
+	</div>
 
 	</body>
 
