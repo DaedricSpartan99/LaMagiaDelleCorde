@@ -73,7 +73,7 @@
 		
 	</div>
 
-		<script async defer type="text/javascript" src="js/map.js"></script>
+		<script async type="text/javascript" src="js/map.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZAgI45PQo9xWPhnE6hjcCob_2vf0T-1o&callback=initMap"></script>
 
 	</body>
