@@ -4,10 +4,12 @@
 
 	<head>
 
-		<title>La Magia Delle Corde</title>
+		<title>La Magia Delle Corde - Bellinzona</title>
 		<meta name="keywords" content="magia, corde, bellinzona">
 		<meta name="description" content="Sito ufficiale de La Magia Delle Corde">
 		<link title="style" media="screen" rel="stylesheet" href="style.css" type="text/css">
+		
+		<script type="text/javascript" src="js/map.js"></script>
 
 	</head>
 
@@ -33,6 +35,8 @@
 
 		<div id="container">
 		    
+		    <!--<h1 id="titolo">Contatti e Dove trovarci</h1>-->
+		    
 		    <div id="mappa">
 		    </div>
 
@@ -47,10 +51,12 @@
 					Via Giuseppe Torti 6A <br>
 					Bellinzona <br><br>
 
-					Tel: 078 856 26 41 <br>
-					E-Mail: anna.maria.bergna&#64gmail.com
+					Tel: 078 856 26 41 <br><br>
+					E-Mail: <a class="riferimento" href="mailto:anna.maria.bergna&#64gmail.com">anna.maria.bergna&#64gmail.com</a>
 					
                 </p>
+                
+                <a href="" id="facebook"></a>
                 
 			</div>
 
@@ -70,10 +76,10 @@
 		<script type="text/javascript" src="js/bounds.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript"> fixMenuLi() </script>
 		
 	</div>
-
-		<script async type="text/javascript" src="js/map.js"></script>
+	
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZAgI45PQo9xWPhnE6hjcCob_2vf0T-1o&callback=initMap"></script>
 
 	</body>

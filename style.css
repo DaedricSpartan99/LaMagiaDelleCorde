@@ -114,9 +114,9 @@ body {
 	padding-top: 10px;
 	margin-right: 10px;
 
-	transition: background-color 0.5s, margin 0.5s linear 0.3s, opacity 1s;
-	-webkit-transition: background-color 0.5s, margin 0.5s linear 0.3s, opacity 1s;
-	-moz-transition: background-color 0.5s, margin 0.5s linear 0.3s, opacity 1s;
+	transition: background-color 0.5s, margin 0.5s, opacity 1s;
+	-webkit-transition: background-color 0.5s, margin 0.5s, opacity 1s;
+	-moz-transition: background-color 0.5s, margin 0.5s, opacity 1s;
 }
 
 ul li.up {
@@ -146,12 +146,13 @@ a.link:link , a.link:visited {
 	text-decoration: none;
 	font-family: "Bradley Hand ITC";
 	font-weight: bold;
-	color: #000033;
-	padding-left: 40px;
 	border: none;
 	outline: 0;
 
+    color: #000033;
+	padding-left: 40px;
 	background-image: url(res/nota.png);
+	
 	background-repeat:no-repeat;
 	background-size: contain; 
 	background-position: left top;
@@ -170,7 +171,7 @@ a.link:link , a.link:visited {
 	-moz-transition-duration: 1s, 0.5s, 0.5s;
 }
 
-a.link:hover, a.link:active {
+a.link:hover, a.link:focus, a.link:active {
 
 	color: #FFFFFF;
 	padding-left: 60px;
@@ -182,7 +183,7 @@ a.link:hover, a.link:active {
 	float: left;
 	clear: both;
 	width: 90%;
-	min-height: 400px;
+	min-height: 50px;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 30px;
@@ -268,10 +269,11 @@ button.arrow {
 	max-width: 90%;
 	padding-left: 10%;
 	/*background-image: url(icona-titolo.png);*/
-	font-size: 35pt;
+	font-size: 45pt;
 	font-family: 'Freestyle Script';
 	font-weight: bold;
 	font-style: italic;
+	color: #000033;
 }
 
 #copyright {
@@ -451,6 +453,44 @@ p.squaredesc {
 	background-color: #ECECEC;
 }
 
+#facebook {
+    
+    width: 60px;
+    height: 60px;
+    background-image: url(res/facebook-logo.png);
+    background-repeat: none;
+    background-size: contain;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* Per i corsi */
+
+#lez_singole {
+    
+    min-height: 550px;
+}
+
+#lez_duo {
+    
+    min-height: 550px;
+}
+
+/* Per l'iscrizione */
+
+#formulario {
+    
+    float: left;
+	clear: left;
+	width: 50%;
+	margin-top: 40px;
+	
+	box-shadow: 10px 10px 5px grey;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+}
+
 /* sezioni dinamiche */
 
 div.sezione {
@@ -464,7 +504,10 @@ div.sezione {
 
 div.sezione.grigio {
 
-	background-color: #E0E0E0;
+    background-color: #E0E0E0;
+	background-image: url(res/paper.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 div.sezione.azzurro {
@@ -519,6 +562,14 @@ div.sezione.ombreggiato {
     margin-bottom: 15px;
 }
 
+a.riferimento {
+    
+    font-family: 'Bradley Hand ITC';
+    font-size: 16pt;
+    font-weight: bold;
+    color: darkblue;
+}
+
 p.testo {
 
 	font-family: 'Bradley Hand ITC';
@@ -531,6 +582,11 @@ p.testo {
 	margin-bottom: 20px;
 	text-align: left;
 	font-size: 16pt;
+}
+
+p.testo.corsivo {
+
+	font-style: italic;
 }
 
 p.testo.centrato {
@@ -560,12 +616,12 @@ img.immagine.ombreggiato {
 ul.lista {
 
 	list-style-type: none;
-	padding-left: 10%;
+	padding-left: 3%;
 	font-family: 'Bradley Hand ITC';
 	font-weight: bold;
 	float: left;
 	clear: both;
-	font-size: 16pt;
+	font-size: 15pt;
 	width: 90%;
 	margin-bottom: 10px;
 }
@@ -573,9 +629,10 @@ ul.lista {
 ul.lista li {
 
 	margin-bottom: 20px;
+	padding-left: 40px;
 	background-image: url(res/nota.png);
 	background-repeat:no-repeat;
-	background-size: contain;
+	background-size: 20px 25px;
 	background-position: left top;
 }
 

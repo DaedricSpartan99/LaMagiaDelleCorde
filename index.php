@@ -4,9 +4,9 @@
 
 	<head>
 
-		<title>La Magia Delle Corde</title>
-		<meta name="keywords" content="magia, corde, bellinzona">
-		<meta name="description" content="Sito ufficiale de La Magia Delle Corde">
+		<title>La Magia Delle Corde - Bellinzona</title>
+		<meta name="keywords" content="magia, corde, bellinzona, anna, maria, bergna">
+		<meta name="description" content="La Magia Delle Corde, Bellinzona, Anna Maria Bergna, Via Giuseppe Torti 16A">
 		<link title="style" media="screen" rel="stylesheet" href="style.css" type="text/css">
 
 	</head>
@@ -51,7 +51,7 @@
 
 			<div id="description">
 
-				<p id="poesia" class="testo centrato">
+				<p id="poesia" class="testo centrato corsivo">
 
 					Nel rotondo crocicchio <br>
 					sei fanciulle ballano. <br>
@@ -76,7 +76,7 @@
 		        <a href="lascuola.php" class="squarelink" id="squarelascuola">
 		        
 		            <h2 class="squaretitle">La scuola</h2>
-		            <img class="squareimg" src="res/" alt="la scuola" />
+		            <img class="squareimg" src="res/" alt="La Magia Delle Corde - la scuola" />
 		        
 		            <p class="squaredesc">
 		            
@@ -88,7 +88,7 @@
 		        <a href="lascuola.php" class="squarelink" id="squarecorsi">
 		        
 		            <h2 class="squaretitle">Corsi</h2>
-		            <img class="squareimg" src="res/" alt="corsi" />
+		            <img class="squareimg" src="res/" alt="La Magia Delle Corde - corsi" />
 		        
 		            <p class="squaredesc">
 		            
@@ -111,6 +111,7 @@
 		<script type="text/javascript" src="js/bounds.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript"> fixMenuLi() </script>
 		
 	</div>
 

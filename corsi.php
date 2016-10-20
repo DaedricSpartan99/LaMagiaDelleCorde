@@ -13,98 +13,115 @@
 
 	<body>
 
-		<div id="header">
+	<div id="cover">
 
-			<div class="menu">
+		<div id="header" onmouseover="headerOver()" onmouseout="headerExit()">
 
-				<a class="link" id="link1" href="index.html">Homepage</a>
-				<a class="link" id="link2" href="iscrizione.html">Iscriviti</a>
-				<a class="link" id="link3" href="lascuola.html">La scuola</a>
-				<a class="link" id="link4" href="eventi.php">Eventi</a>
-				<a class="link" id="link5" href="contatti.html">Contatti</a>
+			<a id="logolink" href="index.php"><img id="logo" src="res/logo1.png" alt="La magia delle corde" /></a>
 
-			</div>
+			<ul id="menu">
 
-			<img class="logo" src="res/logo1.png" alt="La magia delle corde" />
+				<li class="up"><a class="link" href="index.php">Home</a></li>
+				<li class="down"><a class="link" href="lascuola.php">La scuola</a></li>
+				<li class="up"><a class="link" href="iscrizione.php">Iscrizione</a></li>
+				<li class="down"><a class="link" href="corsi.php">Corsi</a></li>
+				<li class="up"><a class="link" href="contatti.php">Contatti</a></li>
+
+			</ul>
 
 		</div>
 
 		<div id="container">
+		    
+		    <!--<h1 id="titolo">Corsi e Tariffe</h1>-->
 
-			<div class="content">
+		</div>
 
-				<h1 id="titolo"> Corsi </h1>
+		<div id="content">
 
-				<div id="dati">
+			<div class="sezione bi-colonna">
 
-					<!--<h2 class="titolo_sezione">Costi</h2>-->
+				<div class="sezione" id="lez_singole">
 
-					<div class="sinistra">
+					<h2 class="titolo_sezione">Lezioni Singole</h2>
 
-						<h3 class="sottotitolo_sezione">Lezioni Singole</h3>
+					<ul class="lista">
 
-						<ul class="lista">
+						<li>30 min. , CHF 620.- </li>
+						<li>45 min. , CHF 930.- </li>
+						<li>60 min. , CHF 1240.- </li>
 
-							<li>30 min. , CHF 620.- </li>
-							<li>45 min. , CHF 930.- </li>
-							<li>60 min. , CHF 1240.- </li>
+					</ul>
 
-						</ul>
-
-						<p class="testo">
+					<p class="testo">
 
 						Per un totale di 17 lezioni a semestre
 
-						</p>
-
-						<ul class="lista">
-
-						<li>Per adulti di 45 min. CHF 300.- <br> Pacchetto di 5 lezioni per risvegliare o scoprire la gioia di suonare</li>
-
-						</ul>
-
-					</div>
-
-					<div class="destra">
-
-						<h3 class="sottotitolo_sezione">Lezioni Collettive</h3>
-
-						<ul class="lista">
-
-							<li>In duo <br> 30 min. , CHF 350.- per allievo</li>
-							<li>In duo <br> 45 min. , CHF 510.- per allievo </li>
-
-						</ul>
+					</p>
 					
-						<p class="testo">
+					<h3 class="sottotitolo_sezione">Per adulti</h3>
 
-							Per un totale di 17 lezioni a semestre
+					<ul class="lista">
 
-						</p>
+						<li>45 min. CHF 300.- <br> Pacchetto di 5 lezioni per risvegliare o scoprire la gioia di suonare</li>
 
-						<ul class="lista">
+					</ul>
 
-							<li>In quartetto <br> 45 min. , CHF 240.- per allievo</li>
-							<li>In ensamble (minimo 8 allievi) <br> 45 min. CHF 120.- per allievo</li>
+				</div>
 
-						</ul>
+				<div class="sezione" id="lez-duo">
 
-						<p class="testo">
+					<h2 class="titolo_sezione">Lezioni Collettive</h2>
+					
+					<h3 class="sottotitolo_sezione">In duo</h3>
 
-							Per un totale di 15 lezioni a semestre
+					<ul class="lista">
 
-						</p>
+						<li>30 min. , CHF 350.- per allievo</li>
+						<li>45 min. , CHF 510.- per allievo </li>
 
-					</div>
+					</ul>
+					
+					<p class="testo">
+
+						Per un totale di 17 lezioni a semestre
+
+					</p>
+					
+					<h3 class="sottotitolo_sezione">A gruppi</h3>
+
+					<ul class="lista">
+
+						<li>In quartetto <br> 45 min. , CHF 240.- per allievo</li>
+						<li>In ensamble (minimo 8 allievi) <br> 45 min. CHF 120.- per allievo</li>
+
+					</ul>
+
+					<p class="testo">
+
+						Per un totale di 15 lezioni a semestre
+
+					</p>
+
 				</div>
 
 			</div>
 
-			<p id="copyright"> &#64 Copyright. All Rights Reserved | By Raffaele Ancarola &#38 Lia Rampazzi </p>
-
 		</div>
 
-		<script src="js/bounds.js"></script>
+		<p id="copyright">
+
+			&#64 Copyright | All Rights Reserved <br>
+			Raffaele Ancarola
+
+		</p>
+
+		<script type="text/javascript" src="js/bounds.js"></script>
+		<script type="text/javascript" src="js/slideshow.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript"> fixMenuLi() </script>
+		
+	</div>
 
 	</body>
 
