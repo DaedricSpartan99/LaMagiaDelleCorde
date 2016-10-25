@@ -1,26 +1,17 @@
 
-function slideShowOver() {
+var headerheight = 0;
 
-	var elems = document.getElementsByClassName('arrow');
+function headerHeight(perc) {
 
-	var i;
-
-	for (i = 0; i < elems.length; i++) {
-		elems[i].style.visibility = "visible";
-	}
-}
-
-function slideShowExit() {
-
-	var elems = document.getElementsByClassName('arrow');
-
-	var i;
-
-	for (i = 0; i < elems.length; i++) {
-		elems[i].style.visibility = "hidden";
-	}
+	var header = document.getElementById("header");
+	var width = header.clientWidth;
+	height = width * perc / 100;
+	header.style.height = height + 'px';
+	return height;
 }
 
 (function() {
+
+	headerheight = headerHeight(25);
 
 })();

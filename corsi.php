@@ -4,7 +4,7 @@
 
 	<head>
 
-		<title>La Magia Delle Corde</title>
+		<title>La Magia Delle Corde - Bellinzona</title>
 		<meta name="keywords" content="magia, corde, bellinzona">
 		<meta name="description" content="Sito ufficiale de La Magia Delle Corde">
 		<link title="style" media="screen" rel="stylesheet" href="style.css" type="text/css">
@@ -119,7 +119,12 @@
 		<script type="text/javascript" src="js/bounds.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
-		<script type="text/javascript"> fixMenuLi() </script>
+		<script type="text/javascript"> 
+		
+		    fixMenuLi();
+		    headerExit();
+		
+		</script>
 		
 	</div>
 

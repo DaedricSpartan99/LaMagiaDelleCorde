@@ -46,7 +46,7 @@
 
                 <p class="testo">
                     
-                    La Magia Delle Corde <br>
+                    La Magia delle Corde <br>
 					Anna Maria Bergna <br>
 					Via Giuseppe Torti 6A <br>
 					Bellinzona <br><br>
@@ -76,7 +76,12 @@
 		<script type="text/javascript" src="js/bounds.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
-		<script type="text/javascript"> fixMenuLi() </script>
+		<script type="text/javascript"> 
+		
+		    fixMenuLi();
+		    headerExit();
+		
+		</script>
 		
 	</div>
 	

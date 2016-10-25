@@ -1,10 +1,17 @@
 
+
 function headerOver() {
+    
+    //window.alert(headerheight);
+    
+    var menuperc = 48;
+    var liperc = 15;
+    var textperc = 20.0 / 322.75; // referred on client header height
     
     var ul = document.getElementById("menu");
     
-    ul.style.top = '150px';
-    ul.style.paddingLeft = '35%';
+    ul.style.top = menuperc * headerheight / 100 + 'px';
+    ul.style.paddingLeft = '32%';
     ul.style.backgroundColor = 'rgba(220, 220, 220, 0.9)';
     
     var ups = ul.getElementsByClassName("up");
@@ -14,27 +21,29 @@ function headerOver() {
     for (var i = 0; i < ups.length; i++) {
         
         ups[i].style.marginTop = '0';
-        ups[i].style.marginBottom = '80px';
+        ups[i].style.marginBottom = liperc * headerheight / 100 + 'px';
     }
     
     for (var i = 0; i < downs.length; i++) {
         
-        downs[i].style.marginTop = '80px';
+        downs[i].style.marginTop = liperc * headerheight / 100 + 'px';
         downs[i].style.marginBottom = '0';
     }
     
     for (var i = 0; i < links.length; i++) {
         
-        links[i].style.fontSize = '20pt';
+        links[i].style.fontSize = textperc * headerheight + 'pt';
     }
 }
 
 function headerExit() {
     
+    var textperc = 18.0 / 322.75;
+    
     var ul = document.getElementById("menu");
     
     ul.style.top = '20px';
-    ul.style.paddingLeft = '38%';
+    ul.style.paddingLeft = '35%';
     ul.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
     
     var lis = ul.getElementsByTagName("li");
@@ -48,7 +57,7 @@ function headerExit() {
     
     for (var i = 0; i < links.length; i++) {
         
-        links[i].style.fontSize = '18pt';
+        links[i].style.fontSize = textperc * headerheight + 'pt';
     }
 }
 

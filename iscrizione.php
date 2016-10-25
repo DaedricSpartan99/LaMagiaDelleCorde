@@ -41,13 +41,12 @@
 
 				<p class="testo">
 
-					Per conseguire l'iscrizione &egrave richiesto di stampare
-					il formulario sottostante, compilarlo e inviarlo al seguente
+					Scaricare il formulario d'iscrizione, compilandolo al seguente
 					indirizzo: </p>
 
 				<p class="testo corsivo">
 
-					La Magia Delle Corde <br>
+					La Magia delle Corde <br>
 					Via Giuseppe Torti 6A <br>
 					6500 Bellinzona <br><br>
 
@@ -73,7 +72,12 @@
 		<script type="text/javascript" src="js/bounds.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
-		<script type="text/javascript"> fixMenuLi() </script>
+		<script type="text/javascript"> 
+		
+		    fixMenuLi();
+		    headerExit();
+		
+		</script>
 		
 	</div>
 

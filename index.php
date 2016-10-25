@@ -111,7 +111,12 @@
 		<script type="text/javascript" src="js/bounds.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
-		<script type="text/javascript"> fixMenuLi() </script>
+		<script type="text/javascript"> 
+		
+		    fixMenuLi();
+		    headerExit();
+		
+		</script>
 		
 	</div>
 

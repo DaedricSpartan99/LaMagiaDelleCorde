@@ -102,7 +102,12 @@ Dal 1991 al 2014 ha svolto la propria attivit&agrave quale docente di chitarra p
 		<script type="text/javascript" src="js/bounds.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
-		<script type="text/javascript"> fixMenuLi() </script>
+		<script type="text/javascript"> 
+		
+		    fixMenuLi();
+		    headerExit();
+		
+		</script>
 		
 	</div>
 
