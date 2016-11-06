@@ -41,7 +41,7 @@
 
 				<p class="testo">
 
-					Scaricare il formulario d'iscrizione, compilandolo al seguente
+					Scaricare il formulario d'iscrizione, inviandolo al seguente
 					indirizzo: </p>
 
 				<p class="testo corsivo">

@@ -39,7 +39,7 @@ body {
 	clear: both;
 	width: 100%;
 	height: 400px;
-	background-image: url(res/chitarra-bianca.png);
+	background-image: url('res/Sfondo nuvolosissimo.png');
 	background-size: 100% 100%;
 	position: relative;
 	z-index: -2;
@@ -61,7 +61,7 @@ body {
 	-moz-box-shadow: 10px 10px 5px grey;
 	
 	outline: 0;
-	border-left: 5px solid #06293b;
+	/*border-left: 5px solid #06293b;*/
 	background-color: white;
 
 	-moz-transition: -moz-transform 1s, opacity 1s linear;
@@ -111,6 +111,7 @@ body {
 	min-height: 50px;
 	border-radius: 1em;
 	padding-left: 6px;
+	padding-right: 6px;
 	padding-top: 10px;
 	margin-right: 10px;
 
@@ -188,11 +189,17 @@ a.link:hover, a.link:focus, a.link:active {
 	padding-right: 5%;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background: #e3a43e;
+	/*background: #e3a43e;
 	background: linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);
 	background: -webkit-linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);
 	background: -o-linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);
-	background: -moz-linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);
+	background: -moz-linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);*/
+	
+	background: #ABCEF2;
+	background: linear-gradient(#3E7DBC, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
+	background: -webkit-linear-gradient(#3E7DBC, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
+	background: -o-linear-gradient(#3E7DBC, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
+	background: -moz-linear-gradient(#3E7DBC, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
 }
 
 #description {
@@ -353,6 +360,7 @@ h3.eventdate {
 
     margin-top: 20px;
 	font-size: 19pt;
+	color: #0D0D5F;
 }
 
 a.squarelink {
@@ -525,9 +533,9 @@ div.sezione.bi-colonna {
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
 
-    column-rule: 1px solid #b89d5c;
+    /*column-rule: 1px solid #b89d5c;
     -webkit-column-rule: 1px solid #b89d5c;
-    -moz-column-rule: 1px solid #b89d5c;
+    -moz-column-rule: 1px solid #b89d5c;*/
 
     column-width: 47%;
     -webkit-column-width: 47%;
