@@ -1,0 +1,14 @@
+
+/* Per l'iscrizione */
+
+#formulario {
+    
+    float: left;
+	clear: left;
+	width: 50%;
+	margin-top: 40px;
+	
+	box-shadow: 10px 10px 5px grey;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+}

@@ -1,0 +1,18 @@
+/* per lascuola */
+
+#lascuolaimg {
+    
+    float: right;
+    clear: right;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    height: auto;
+    
+    box-shadow: 10px 10px 5px grey;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+    
+    margin-bottom: 15px;
+}

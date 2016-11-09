@@ -1,0 +1,160 @@
+/* header informations */
+
+@font-face {
+
+	font-family: 'Bradley Hand ITC';
+  	src: url(res/BRADHI.ttf);
+}
+
+@font-face {
+
+	font-family: 'Freestyle Script';
+	src: url(res/freestyle-script.ttf);
+}
+
+#header {
+
+	float: left;
+	clear: both;
+	width: 100%;
+	height: 400px;
+	background-image: url('res/Sfondo nuvolosissimo.png');
+	background-size: 100% 100%;
+	position: relative;
+	z-index: -2;
+	border-bottom: 5px solid rgba(6, 41, 59, 0.6);
+	overflow: hidden;
+}
+
+#logolink {
+
+	width: 23%;
+	margin-top: 50px;
+	margin-left: 5%;
+	margin-right: 3%;
+	padding: 3px;
+	float: left;
+	clear: left;
+	
+	box-shadow: 10px 10px 5px grey;
+	-webkit-box-shadow: 10px 10px 5px grey;
+	-moz-box-shadow: 10px 10px 5px grey;
+	
+	outline: 0;
+	/*border-left: 5px solid #06293b;*/
+	background-color: white;
+
+	-moz-transition: -moz-transform 1s, opacity 1s linear;
+	-webkit-transition: -webkit-transform 1s, opacity 1s linear;
+	transition: transform 1s, opacity 1s linear;
+	z-index: 0;
+}
+
+#logo {
+
+	width: 100%;
+	height: auto;
+}
+
+#logolink:hover {
+
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+
+	opacity: 0.8;
+}
+
+#menu {
+
+	display: inline-block;
+	width: 100%;
+	left: 0;
+	top: 20px;
+	padding-left: 35%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: -1;
+	position: absolute;
+	
+	transition: top 0.3s, padding-left 0.3s, background-color 0.3s;
+	-webkit-transition: top 0.3s, padding-left 0.3s, background-color 0.3s;
+	-moz-transition: top 0.3s, padding-left 0.3s, background-color 0.3s;
+}
+
+#menu li {
+
+	display: block;
+	float: left;
+	min-width: 100px;
+	min-height: 50px;
+	border-radius: 1em;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 10px;
+	margin-right: 10px;
+
+	transition: background-color 0.5s, margin 0.5s, opacity 1s;
+	-webkit-transition: background-color 0.5s, margin 0.5s, opacity 1s;
+	-moz-transition: background-color 0.5s, margin 0.5s, opacity 1s;
+}
+
+ul li.up {
+
+	/*margin-bottom: 100px;
+	margin-top: 0;*/
+}
+
+ul li.down {
+
+	/*margin-top: 100px;
+	margin-bottom: 0;*/
+}
+
+#menu li:hover {
+
+	background-color: #6666ff;
+	opacity: 0.9;
+}
+
+a.link:link , a.link:visited {
+
+	text-align: center;
+	font-size: 18pt;
+	width: 100%;
+	font-style: italic;
+	text-decoration: none;
+	font-family: "Bradley Hand ITC";
+	font-weight: bold;
+	border: none;
+	outline: 0;
+
+    color: #000033;
+	padding-left: 40px;
+	background-image: url(res/nota.png);
+	
+	background-repeat:no-repeat;
+	background-size: contain; 
+	background-position: left top;
+	background-color: none;
+	
+	transition-property: color, padding-left, background-image, font-size;
+	transition-timing-function: linear, linear, ease, linear;
+	transition-duration: 1s, 0.5s, 1s, 0.5s;
+
+	-webkit-transition-property: color, padding-left, background-image, font-size;
+	-webkit-transition-timing-function: linear, linear, ease, linear;
+	-webkit-transition-duration: 1s, 0.5s, 1s, 0.5s;
+
+	-moz-transition-property: color, padding-left, font-size;
+	-moz-transition-timing-function: linear;
+	-moz-transition-duration: 1s, 0.5s, 0.5s;
+}
+
+a.link:hover, a.link:focus, a.link:active {
+
+	color: #FFFFFF;
+	padding-left: 60px;
+	background-image: url(res/doppia-nota.png);
+}

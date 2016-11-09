@@ -8,6 +8,10 @@
 		<meta name="keywords" content="magia, corde, bellinzona, anna, maria, bergna">
 		<meta name="description" content="La Magia Delle Corde, Bellinzona, Anna Maria Bergna, Via Giuseppe Torti 16A">
 		<link title="style" media="screen" rel="stylesheet" href="style.css" type="text/css">
+		<link title="style" media="screen" rel="stylesheet" href="custom.css" type="text/css">
+		<link title="style" media="screen" rel="stylesheet" href="event_show.css" type="text/css">
+		<link title="style" media="screen" rel="stylesheet" href="header.css" type="text/css">
+		<link title="style" media="screen" rel="stylesheet" href="home.css" type="text/css">
 
 	</head>
 
@@ -23,9 +27,9 @@
 
 				<li class="up"><a class="link" href="index.php">Home</a></li>
 				<li class="down"><a class="link" href="lascuola.php">La scuola</a></li>
-				<li class="up"><a class="link" href="iscrizione.php">Iscrizione</a></li>
-				<li class="down"><a class="link" href="corsi.php">Corsi</a></li>
-				<li class="up"><a class="link" href="contatti.php">Contatti</a></li>
+				<li class="up"><a class="link" href="iscrizione.html">Iscrizione</a></li>
+				<li class="down"><a class="link" href="corsi.html">Corsi</a></li>
+				<li class="up"><a class="link" href="contatti.html">Contatti</a></li>
 
 			</ul>
 

@@ -1,0 +1,86 @@
+/* Per la homepage */
+
+@font-face {
+
+	font-family: 'Bradley Hand ITC';
+  	src: url(res/BRADHI.ttf);
+}
+
+@font-face {
+
+	font-family: 'Freestyle Script';
+	src: url(res/freestyle-script.ttf);
+}
+
+#poesia {
+
+    margin-top: 20px;
+	font-size: 19pt;
+	color: #0D0D5F;
+}
+
+a.squarelink {
+    
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    clear: both;
+    border-radius: 1em;
+    text-decoration: none;
+    
+    box-shadow: 10px 10px 5px grey;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+    
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+h2.squaretitle {
+    
+    font-family: "Freestyle Script";
+    font-size: 23pt;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    clear: both;
+    width: 100%;
+    color: #606060;
+    text-align: center;
+}
+
+img.squareimg {
+    
+    width: 90%;
+    height: 150px;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+    clear: both;
+}
+
+p.squaredesc {
+    
+    width: 90%;
+    padding-left: 10%;
+    font-family: "Bradley Hand ITC";
+    font-size: 14pt;
+    font-style: none;
+    font-variant: none;
+    color: black;
+    text-align: left;
+    padding-top: 15px;
+}
+
+#squarelascuola {
+    
+    float: right;
+    width: 50%;
+    margin-right: 50px;
+}
+
+#squarecorsi {
+    
+    float: left;
+    width: 50%;
+    margin-left: 50px;
+}
