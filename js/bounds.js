@@ -15,12 +15,10 @@ function coverMinWidth(perc) {
 	var width = screen.width * perc / 100;
 	var cover = document.getElementById('cover');
 	cover.style.minWidth = width + 'px';
-	return width;
+	return cover.clientWidth;
 }
 
 (function() {
-
-	//coverWidth = document.all ? document.body.clientWidth : window.innerWidth;
 	
 	coverWidth = coverMinWidth(92);
 	headerheight = headerHeight(coverWidth, 25);

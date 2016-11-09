@@ -89,16 +89,20 @@ function hoverElement(e) {
 }*/
 
 function linkOver(link) {
+
+    var padperc = 60 / 1291;
     
     link.style.color = '#FFFFFF';
-    link.style.paddingLeft = '60px';
+    link.style.paddingLeft = coverWidth * padperc + 'px';
     link.style.backgroundImage = 'url(res/doppia-nota.png)';
 }
 
 function linkExit(link) {
+
+    var padperc = 40 / 1291;
     
     link.style.color = '#000033';
-    link.style.paddingLeft = '40px';
+    link.style.paddingLeft = coverWidth * padperc + 'px';
     link.style.backgroundImage = 'url(res/nota.png)';
 }
 
@@ -154,5 +158,7 @@ function fixMenuLi() {
             var l = hoverElement(e);
             linkExit(l);
         };
+
+        lin.style.paddingLeft = coverWidth * 40 / 1291 + 'px';
     }
 }
