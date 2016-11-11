@@ -25,7 +25,7 @@
 	position: relative;
 }
 
-button.arrow {
+/*button.arrow {
 
 	position: absolute;
 	bottom: 150px;
@@ -45,7 +45,7 @@ button.arrow {
 #rightarrow {
 
 	right: 0;
-}
+}*/
 
 a.eventlink {
 
@@ -53,17 +53,18 @@ a.eventlink {
 	width: 90%;
 	padding-left: 5%;
 	padding-right: 5%;
-	/*padding-bottom: 20px;*/
 	display: none;
 }
 
 img.eventimg {
 
-	width: 100%;
-	height: 300px;
+	width: 80%;
+	height: 250px;
+	margin-left: 10%;
+	margin-right: 10%;
 	float: left;
 	clear: both;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 img.eventimg:hover {
@@ -73,7 +74,7 @@ img.eventimg:hover {
 
 h2.eventtitle {
 
-	font-family: 'Freestyle Script';
+	font-family: 'Bradley Hand ITC';
 	font-size: 28pt;
 	color: #003954;
 	text-align: center;
@@ -89,7 +90,7 @@ h2.eventtitle {
 
 h3.eventdate {
 
-	font-family: 'Freestyle Script';
+	font-family: 'Bradley Hand ITC';
 	font-size: 15pt;
 	color: black;
 	text-align: right;
@@ -98,4 +99,30 @@ h3.eventdate {
 	padding-bottom: 5px;
 	float: left;
 	clear: both;
+}
+
+div.eventindex {
+
+	min-width: 90%;
+	overflow: auto;
+	padding-left: 10%;
+	height: 60px;
+}
+
+div.indexgkey {
+
+	width: 8%;
+	height: 100%;
+
+	background-size: 100% 100%;
+}
+
+div.indexbody {
+
+	min-width: 92%;
+	height: 100%;
+
+	/*background-image: url(); pentagramma di righe vuoto */
+	background-size: auto 100%;
+	background-repeat: repeat-x;
 }
