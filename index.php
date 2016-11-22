@@ -7,11 +7,21 @@
 		<title>La Magia Delle Corde - Bellinzona</title>
 		<meta name="keywords" content="magia, corde, bellinzona, anna, maria, bergna">
 		<meta name="description" content="La Magia Delle Corde, Bellinzona, Anna Maria Bergna, Via Giuseppe Torti 16A">
+		
 		<link title="style" media="screen" rel="stylesheet" href="style.css" type="text/css">
 		<link title="style" media="screen" rel="stylesheet" href="custom.css" type="text/css">
 		<link title="style" media="screen" rel="stylesheet" href="event_show.css" type="text/css">
 		<link title="style" media="screen" rel="stylesheet" href="header.css" type="text/css">
 		<link title="style" media="screen" rel="stylesheet" href="home.css" type="text/css">
+
+		<?php
+
+			include 'eventi.php';
+			$eventlist = customEvents();
+
+		?>
+
+		<script type="text/javascript" src="js/slideshow.js"></script>
 
 	</head>
 
@@ -46,10 +56,17 @@
 
 				<?php
 
-					include 'eventi.php';
-					customEvents();
-
+					generateSlideLinks($eventlist);
 				?>
+
+				<div id="eventindex">
+
+					<?php
+
+						generateIndexLinks($eventlist);
+					?>
+
+				</div>
 
 			</div>
 
@@ -113,12 +130,12 @@
 		</p>
 
 		<script type="text/javascript" src="js/bounds.js"></script>
-		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
 		<script type="text/javascript"> 
 		
 		    fixMenuLi();
 		    headerExit();
+		    initSlideshow();
 		
 		</script>
 		

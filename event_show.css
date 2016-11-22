@@ -16,7 +16,7 @@
 
 	float: left;
 	clear: left;
-	width: 50%;
+	width: 45%;
 	margin-top: 40px;
 	box-shadow: 10px 10px 5px grey;
 	background-image: url(res/paper.jpg);
@@ -47,16 +47,16 @@
 	right: 0;
 }*/
 
-a.eventlink {
+a.slidelink {
 
-	outline: 0;
 	width: 90%;
 	padding-left: 5%;
 	padding-right: 5%;
 	display: none;
+	outline: 0;
 }
 
-img.eventimg {
+img.slideimg {
 
 	width: 80%;
 	height: 250px;
@@ -67,12 +67,12 @@ img.eventimg {
 	margin-bottom: 20px;
 }
 
-img.eventimg:hover {
+img.slideimg:hover {
 
 
 }
 
-h2.eventtitle {
+h2.slidetitle {
 
 	font-family: 'Bradley Hand ITC';
 	font-size: 28pt;
@@ -88,7 +88,7 @@ h2.eventtitle {
 	margin-bottom: -10px;
 }
 
-h3.eventdate {
+h3.slidedate {
 
 	font-family: 'Bradley Hand ITC';
 	font-size: 15pt;
@@ -101,28 +101,36 @@ h3.eventdate {
 	clear: both;
 }
 
-div.eventindex {
+#eventindex {
 
 	min-width: 90%;
-	overflow: auto;
-	padding-left: 10%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding-left: 8%;
 	height: 60px;
+
+	background-image: url(res/logo-index.png);
+	background-repeat: no-repeat;
+	background-size: 10% 100%;
 }
 
-div.indexgkey {
+a.indexlink {
 
-	width: 8%;
-	height: 100%;
-
-	background-size: 100% 100%;
+	width: 60px;
+	height: 50px;
+	display: inline;
+	margin-right: 10px;
+	margin-top: 5px;
+	outline: 0;
 }
 
-div.indexbody {
+a.indexlink:hover {
 
-	min-width: 92%;
+}
+
+img.indeximg {
+
+	width: 100%;
 	height: 100%;
-
-	/*background-image: url(); pentagramma di righe vuoto */
-	background-size: auto 100%;
-	background-repeat: repeat-x;
+	border: 5px solid white;
 }

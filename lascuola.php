@@ -13,6 +13,15 @@
 		<link title="style" media="screen" rel="stylesheet" href="header.css" type="text/css">
 		<link title="style" media="screen" rel="stylesheet" href="lascuola.css" type="text/css">
 
+		<?php
+
+			include 'eventi.php';
+			$eventlist = customEvents();
+
+		?>
+
+		<script type="text/javascript" src="js/slideshow.js"></script>
+
 	</head>
 
 	<body>
@@ -46,10 +55,17 @@
 
 				<?php
 
-					include 'eventi.php';
-					customEvents();
-
+					generateSlideLinks($eventlist);
 				?>
+
+				<div id="eventindex">
+
+					<?php
+
+						generateIndexLinks($eventlist);
+					?>
+
+				</div>
 
 			</div>
 
@@ -104,12 +120,12 @@ Dal 1991 al 2014 ha svolto la propria attivit&agrave quale docente di chitarra p
 		</p>
 
 		<script type="text/javascript" src="js/bounds.js"></script>
-		<script type="text/javascript" src="js/slideshow.js"></script>
 		<script type="text/javascript" src="js/header.js"></script>
 		<script type="text/javascript"> 
 		
 		    fixMenuLi();
 		    headerExit();
+		    initSlideshow();
 		
 		</script>
 		

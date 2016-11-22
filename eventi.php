@@ -75,13 +75,52 @@
 		return $out;
 	}
 
-	function createEventLink($page, $obj) {
+	function createIndexLink($page, $obj) {
 
-		echo '<a href="'. $page .'" id="'. $obj['name'] .'" class="eventlink">', PHP_EOL;
-		echo '    <h2 class="eventtitle">'. $obj['name'] .'</h2>', PHP_EOL;
-		echo '    <h3 class="eventdate">'. $obj['date'] .'</h3>', PHP_EOL;
-		echo '    <img class="eventimg" src="'. $obj['img'] .'" alt="Foto evento"/>', PHP_EOL;
+		echo '<a href=' .$page. '" class="indexlink">', PHP_EOL;
+		//echo '    <h2 class="eventtitle">'. $obj['name'] .'</h2>', PHP_EOL;
+		//echo '    <h3 class="eventdate">'. $obj['date'] .'</h3>', PHP_EOL;
+		echo '    <img class="indeximg" src="'. $obj['img'] .'" alt="Foto evento"/>', PHP_EOL;
 		echo '</a>', PHP_EOL;
+	}
+
+	function createSlideLink($page, $obj) {
+
+		echo '<a href=' .$page. '" class="slidelink">', PHP_EOL;
+		echo '    <h2 class="slidetitle">'. $obj['name'] .'</h2>', PHP_EOL;
+		echo '    <h3 class="slidedate">'. $obj['date'] .'</h3>', PHP_EOL;
+		echo '    <img class="slideimg" src="'. $obj['img'] .'" alt="Foto evento"/>', PHP_EOL;
+		echo '</a>', PHP_EOL;
+	}
+
+	function generateIndexLinks($events) {
+
+		if ($events == NULL) {
+
+			// do nothing
+			return;
+		}
+
+		foreach ($events as $page => $obj) {
+
+			createIndexLink($page, $obj);
+		}
+	}
+
+	function generateSlideLinks($events) {
+
+		if ($events == NULL) {
+
+			// generate an empty image link
+			$obj = array("name"=>"Nessun Evento", "img"=>"res/no-image.png", "date"=>"...");
+			createSlideLink("index.php", $obj);
+			return;
+		}
+
+		foreach ($events as $page => $obj) {
+			
+			createSlideLink($page, $obj);
+		}
 	}
 
 	function customEvents() {
@@ -90,10 +129,11 @@
 
 		if ($dirlist == NULL || sizeof($dirlist) == 0) {
 
-			$obj = array("name"=>"Nessun Evento", "img"=>"res/no-image.png", "date"=>"...");
-			createEventLink("index.php", $obj);
-			return;
+			return NULL;
 		}
+
+		siteMapUpdate($dirlist);	// update sitemap
+		$out = array();
 
 		foreach ($dirlist as $dir) {
 
@@ -106,13 +146,15 @@
 			if (sizeof($obj) == 0) {
 
 				echo '<script>console.log("'. $dir .'config.json is empty")</script>', PHP_EOL;
-				return;
+				continue;
 			}
 
 			$page = $dir . "pagina.php";
 			$obj['img'] = $dir . $obj['img'];
 
-			createEventLink($page, $obj);
+			$out[$page] = $obj;
 		}
+
+		return $out;
 	}
 ?>
