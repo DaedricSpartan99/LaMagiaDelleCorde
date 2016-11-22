@@ -53,10 +53,10 @@ body {
 	background: -moz-linear-gradient(#e3a43e 70%, rgba(0, 0, 0, 0) 100%);*/
 	
 	background: #ABCEF2;
-	background: linear-gradient(#3E7DBC, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
-	background: -webkit-linear-gradient(#3E7DBC, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
-	background: -o-linear-gradient(#3E7DBC, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
-	background: -moz-linear-gradient(#3E7DBC, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(#336699, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
+	background: -webkit-linear-gradient(#336699, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
+	background: -o-linear-gradient(#336699, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
+	background: -moz-linear-gradient(#336699, #ABCEF2 60%, rgba(0, 0, 0, 0) 100%);
 }
 
 #description {

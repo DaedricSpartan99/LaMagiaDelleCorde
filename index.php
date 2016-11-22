@@ -97,7 +97,7 @@
 		        <a href="lascuola.php" class="squarelink" id="squarelascuola">
 		        
 		            <h2 class="squaretitle">La scuola</h2>
-		            <img class="squareimg" src="res/" alt="La Magia Delle Corde - la scuola" />
+		            <img class="squareimg" src="res/lascuola.jpg" alt="La Magia Delle Corde - la scuola" />
 		        
 		            <p class="squaredesc">
 		            
@@ -109,7 +109,7 @@
 		        <a href="lascuola.php" class="squarelink" id="squarecorsi">
 		        
 		            <h2 class="squaretitle">Corsi</h2>
-		            <img class="squareimg" src="res/" alt="La Magia Delle Corde - corsi" />
+		            <img class="squareimg" src="res/icorsi.jpeg" alt="La Magia Delle Corde - corsi" />
 		        
 		            <p class="squaredesc">
 		            

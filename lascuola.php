@@ -69,7 +69,7 @@
 
 			</div>
 
-			<img id="lascuolaimg" src="res/" alt="Immagine per la scuola"/>
+			<img id="lascuolaimg" src="res/lascuola-ambiente.png" alt="Immagine per la scuola"/>
 
 		</div>
 
