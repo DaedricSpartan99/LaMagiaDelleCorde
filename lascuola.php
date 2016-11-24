@@ -36,9 +36,9 @@
 
 				<li class="up"><a class="link" href="index.php">Home</a></li>
 				<li class="down"><a class="link" href="lascuola.php">La scuola</a></li>
+				<li class="up"><a class="link" href="corsi.html">Corsi</a></li>
+				<li class="down"><a class="link" href="contatti.html">Contatti</a></li>
 				<li class="up"><a class="link" href="iscrizione.html">Iscrizione</a></li>
-				<li class="down"><a class="link" href="corsi.html">Corsi</a></li>
-				<li class="up"><a class="link" href="contatti.html">Contatti</a></li>
 
 			</ul>
 
@@ -75,9 +75,9 @@
 
 		<div id="content">
 
-			<div class="sezione bi-colonna">
-			    
-			    <h2 class="titolo_sezione">Obiettivi</h2>
+			<h2 class="titolo_sezione">Obiettivi</h2>
+
+			<div class="sezione meta a_sinistra">
 
 				<p class="testo">
 
@@ -88,8 +88,21 @@ Il corso non esclude gli adulti, offrendo loro la possibilit&agrave di organizza
 Le scelte adottate si svilupperanno all'interno di una precisa organizzazione didattica, sia di tipo amatoriale che professionale.
 
 				</p>
-				
-				<h2 class="titolo_sezione">La Docente Anna Maria Bergna</h2>
+
+			</div>
+
+			<img class="immagine quarto a_destra" id="imgentrata" src="res/lascuola_entrata.jpg" alt="La Magia Delle Corde, la Scuola"/>
+
+			<div class="sezione" id="gallery">
+
+				<img class="immagine terzo tutto_a_sinistra" id="imgquadri" src="res/lascuola_quadri.jpg" alt="La Magia Delle Corde, la Scuola"/>
+				<img class="immagine terzo tutto_a_destra" id="imgteca" src="res/lascuola_teca.jpg" alt="La Magia Delle Corde, la Scuola"/>
+
+			</div>
+
+			<h2 class="titolo_sezione">La Docente Anna Maria Bergna</h2>
+
+			<div class="sezione bi-colonna">
 
 				<p class="testo">
 
@@ -106,7 +119,7 @@ Dal 1991 al 2014 ha svolto la propria attivit&agrave quale docente di chitarra p
 
 				</p>
 
-				<img class="immagine meta" src="res/annamaria.jpg" alt="Annamaria" />
+				<img class="immagine meta" src="res/annamaria.jpg" alt="La Magia Delle Corde, Annamaria" />
 
 			</div>
 

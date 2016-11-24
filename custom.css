@@ -199,6 +199,30 @@ div.sezione.quarto {
 	width: 25%;
 }
 
+div.sezione.a_sinistra {
+
+	float: left;
+	clear: none;
+}
+
+div.sezione.a_destra {
+
+	float: right;
+	clear: none;
+}
+
+div.sezione.tutto_a_sinistra {
+
+	float: left;
+	clear: left;
+}
+
+div.sezione.tutto_a_destra {
+
+	float: right;
+	clear: right;
+}
+
 img.immagine.meta {
 
 	width: 50%;
@@ -212,4 +236,28 @@ img.immagine.terzo {
 img.immagine.quarto {
 
 	width: 25%;
+}
+
+img.immagine.a_sinistra {
+
+	float: left;
+	clear: none;
+}
+
+img.immagine.a_destra {
+
+	float: right;
+	clear: none;
+}
+
+img.immagine.tutto_a_sinistra {
+
+	float: left;
+	clear: left;
+}
+
+img.immagine.tutto_a_destra {
+
+	float: right;
+	clear: right;
 }

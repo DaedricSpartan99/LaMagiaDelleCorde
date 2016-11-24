@@ -1,19 +1,12 @@
 /* Per i corsi */
 
-#lez_singole {
-    
-    min-height: 550px;
-    float: left;
-    clear: left;
-    padding-left: 5%;
-    width: 45%;
-}
-
 #lez_duo {
     
-    min-height: 550px;
-    float: right;
-    clear: right;
-    padding-left: 10%;
-    width: 40%;
+   margin-top: 50px;
+}
+
+#img_lez_duo {
+
+    margin-left: 5%;
+    margin-top: 5%;
 }

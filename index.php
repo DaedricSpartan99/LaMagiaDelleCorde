@@ -37,9 +37,9 @@
 
 				<li class="up"><a class="link" href="index.php">Home</a></li>
 				<li class="down"><a class="link" href="lascuola.php">La scuola</a></li>
+				<li class="up"><a class="link" href="corsi.html">Corsi</a></li>
+				<li class="down"><a class="link" href="contatti.html">Contatti</a></li>
 				<li class="up"><a class="link" href="iscrizione.html">Iscrizione</a></li>
-				<li class="down"><a class="link" href="corsi.html">Corsi</a></li>
-				<li class="up"><a class="link" href="contatti.html">Contatti</a></li>
 
 			</ul>
 
@@ -106,7 +106,7 @@
 		            </p>
 		        </a>
 		        
-		        <a href="lascuola.php" class="squarelink" id="squarecorsi">
+		        <a href="corsi.html" class="squarelink" id="squarecorsi">
 		        
 		            <h2 class="squaretitle">Corsi</h2>
 		            <img class="squareimg" src="res/icorsi.jpeg" alt="La Magia Delle Corde - corsi" />
